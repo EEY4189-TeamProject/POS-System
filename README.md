@@ -15,7 +15,7 @@ This project focuses on developing a Point of Sale (POS) system for single-store
 
 ## Languages
 - **C#**: Used for developing the core functionalities of the POS system.
-- **SQL**: Utilized for database management and operations.
+- **SQL Server**: Utilized for database management and operations.
 
 ## Environment Setup
 To set up the development environment for the Grocery Shop System, follow these steps:
@@ -26,5 +26,5 @@ To set up the development environment for the Grocery Shop System, follow these 
 
 2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/grocery-shop-system.git
-   cd grocery-shop-system
+   git clone https://github.com/EEY4189-TeamProject/POS-System.git
+   cd POS-System
