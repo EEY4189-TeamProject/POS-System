@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:POS_System"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Style\ButtonStyles.xaml"/>
+                <ResourceDictionary Source="\Style\ListViewStyle.xaml"/>
+                <ResourceDictionary Source="\Style\Login.xaml"/>
+                <ResourceDictionary Source="\Style\User.xaml"/>
+                <ResourceDictionary Source="\Style\UserActive.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
