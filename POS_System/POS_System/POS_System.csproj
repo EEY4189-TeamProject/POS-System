@@ -67,6 +67,9 @@
     <Compile Include="View\UCDashboard.xaml.cs">
       <DependentUpon>UCDashboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UCProduct.xaml.cs">
+      <DependentUpon>UCProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VWLogin.xaml.cs">
       <DependentUpon>VWLogin.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\UCDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UCProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
