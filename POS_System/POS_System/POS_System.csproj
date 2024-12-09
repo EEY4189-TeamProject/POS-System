@@ -70,6 +70,12 @@
     <Compile Include="View\UCProduct.xaml.cs">
       <DependentUpon>UCProduct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UCStock.xaml.cs">
+      <DependentUpon>UCStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UCStockUpdate.xaml.cs">
+      <DependentUpon>UCStockUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VWLogin.xaml.cs">
       <DependentUpon>VWLogin.xaml</DependentUpon>
     </Compile>
@@ -113,6 +119,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\UCProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UCStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UCStockUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
