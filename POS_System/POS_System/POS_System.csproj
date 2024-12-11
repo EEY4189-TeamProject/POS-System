@@ -64,11 +64,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\SQLConnection.cs" />
     <Compile Include="View\UCDashboard.xaml.cs">
       <DependentUpon>UCDashboard.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UCProduct.xaml.cs">
       <DependentUpon>UCProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UCPurchase.xaml.cs">
+      <DependentUpon>UCPurchase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UCPurchaseCancelled.xaml.cs">
+      <DependentUpon>UCPurchaseCancelled.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UCStock.xaml.cs">
       <DependentUpon>UCStock.xaml</DependentUpon>
@@ -119,6 +126,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\UCProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UCPurchase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UCPurchaseCancelled.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
