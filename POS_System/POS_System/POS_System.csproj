@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Reports\POSDataset.Designer.cs" />
     <Compile Include="ViewModel\SQLConnection.cs" />
     <Compile Include="View\UCDashboard.xaml.cs">
       <DependentUpon>UCDashboard.xaml</DependentUpon>
@@ -177,6 +178,19 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Reports\POSDataset.xsc">
+      <DependentUpon>POSDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\POSDataset.xsd" />
+    <None Include="Reports\POSDataset.xss">
+      <DependentUpon>POSDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ProductReport.rdlc" />
+    <None Include="Reports\SalesReport.rdlc" />
+    <None Include="Reports\StockReport.rdlc" />
+    <None Include="Reports\SupplierReport.rdlc" />
+    <None Include="Reports\UserReport.rdlc" />
+    <None Include="Reports\VoidReport.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
