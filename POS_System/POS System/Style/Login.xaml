@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style x:Key="button" TargetType="Button">
-        <Setter Property="Background" Value="#2c698d"/>
+        <Setter Property="Background" Value="#23664d"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="FontSize" Value="20"/>
@@ -11,7 +11,7 @@
 
     <Style x:Key="PasswordBox" TargetType="PasswordBox">
         <Setter Property="Background" Value="White"/>
-        <Setter Property="Foreground" Value="#2c698d"/>
+        <Setter Property="Foreground" Value="#23664d"/>
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="FontSize" Value="20"/>
        
@@ -19,7 +19,7 @@
 
     <Style x:Key="TextBox" TargetType="TextBox">
         <Setter Property="Background" Value="White"/>
-        <Setter Property="Foreground" Value="#2c698d"/>
+        <Setter Property="Foreground" Value="#23664d"/>
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="FontSize" Value="20"/>
 
@@ -30,13 +30,13 @@
     <ControlTemplate x:Key="ButtonTemplate1" TargetType="{x:Type Button}">
         <Grid/>
     </ControlTemplate>
-    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-    <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#23664d"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#013220"/>
+    <SolidColorBrush x:Key="Button.Pressed.Background" Color="#23664d"/>
+    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#23664d"/>
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
-    <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
-    <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#23664d"/>
+    <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#23664d"/>
     <Style x:Key="TextBoxStyle1" TargetType="{x:Type TextBox}">
         <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
@@ -51,7 +51,7 @@
 
 
         <Setter Property="Background" Value="White"/>
-        <Setter Property="Foreground" Value="#2c698d"/>
+        <Setter Property="Foreground" Value="#013220"/>
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="FontSize" Value="20"/>
 

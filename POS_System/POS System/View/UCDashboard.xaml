@@ -14,7 +14,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Border CornerRadius="5" Background="#2c698d" Margin="5" >
+        <Border CornerRadius="5" Background="#23664d" Margin="5" >
             <StackPanel Orientation="Vertical" Margin="00,00,00,00">
          
                     <!--<Label fa5:Awesome.Content="Regular_SmileBeam" FontSize="100" Foreground="White" />-->
@@ -161,7 +161,7 @@
 
             </StackPanel>
         </Border>
-        <Border CornerRadius="5" Background="#2c698d" Margin="00,5,5,5" Grid.Column="1" BorderThickness="2">
+        <Border CornerRadius="5" Background="#23664d" Margin="00,5,5,5" Grid.Column="1" BorderThickness="2">
             <StackPanel>
                 <ContentPresenter Content="{Binding Control, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                 <!--<Border CornerRadius="20" Background="White" Grid.Column="1" Height="930"  Margin="20">

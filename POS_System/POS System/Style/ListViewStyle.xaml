@@ -4,10 +4,10 @@
     <Style TargetType="ListView" x:Key="List">
 
         <Setter Property="Background" Value="White"/>
-        <Setter Property="Foreground" Value="#256D85"/>
+        <Setter Property="Foreground" Value="#23664d"/>
         <Setter Property="FontSize" Value="25"/>
         <Setter Property="FontFamily" Value="times new roman"/>
-        <Setter Property="BorderBrush" Value="#256D85"/>
+        <Setter Property="BorderBrush" Value="#23664d"/>
         
         
 
@@ -19,7 +19,7 @@
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontFamily" Value="times new roman"/>
-        <Setter Property="BorderBrush" Value="#256D85"/>
+        <Setter Property="BorderBrush" Value="#23664d"/>
 
 
 
@@ -27,11 +27,11 @@
 
     <Style TargetType="Button" x:Key="ListViewButton">
         <Setter Property="Background" Value="White"/>
-        <Setter Property="BorderBrush" Value="#256D85"/>
+        <Setter Property="BorderBrush" Value="#23664d"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="FontSize" Value="15"/>
-        <Setter Property="Foreground" Value="#256D85"/>
+        <Setter Property="Foreground" Value="#23664d"/>
 
 
     </Style>
@@ -41,7 +41,7 @@
     <Style TargetType="TextBlock" x:Key="PurchesListView">
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="FontSize" Value="30"/>
-        <Setter Property="Foreground" Value="#256D85"/>
+        <Setter Property="Foreground" Value="#23664d"/>
 
 
     </Style>
