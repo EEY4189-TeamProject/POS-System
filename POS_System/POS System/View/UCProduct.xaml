@@ -8,32 +8,32 @@
              
              mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
              d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}" >
-    <Grid Background="#2c698d">
+    <Grid Background="#23664d">
         <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
         <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
 
             <StackPanel Orientation="Horizontal">
-                <Label fa5:Awesome.Content="Solid_ShoppingBasket" FontSize="150" Foreground="#2c698d" VerticalAlignment="Center"/>
-                <TextBlock Text="Product Details" FontSize="50" FontFamily="times new roman" Margin="20,100,400,20" Foreground="#256D85" VerticalAlignment="Center"/>
+                    <Label fa5:Awesome.Content="Solid_ShoppingBasket" FontSize="150" Foreground="#23664d" VerticalAlignment="Center"/>
+                    <TextBlock Text="Product Details" FontSize="50" FontFamily="times new roman" Margin="20,100,400,20" Foreground="#23664d" VerticalAlignment="Center"/>
 
 
                 <StackPanel Orientation="Vertical" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00">
-                    <TextBlock Foreground="#2c698d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" />
-                    <ComboBox Foreground="#2c698d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" />
+                            <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <ComboBoxItem Content="Product ID"/>
                         <ComboBoxItem Content="Product Name"/>
                         <ComboBoxItem Content="Product Price"/>
                     </ComboBox>
-                    <TextBox  Foreground="#2c698d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBox  Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                             <Button  Command="{Binding cmdSearch}" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Background="White" >
-                        <Label fa5:Awesome.Content="Solid_Search" Foreground="#2c698d"/>
+                                <Label fa5:Awesome.Content="Solid_Search" Foreground="#23664d"/>
                     </Button>
 
                 </StackPanel>
-                    <Button  Command="{Binding cmdProductreset}" Background="White" BorderBrush="#2c698d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                        <Button  Command="{Binding cmdProductreset}" Background="White" BorderBrush="#23664d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />
 
-                    <Button BorderBrush="#2c698d" Background="White" Command="{Binding cmdAddProduct}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,10,30,00"/>
+                        <Button BorderBrush="#23664d" Background="White" Command="{Binding cmdAddProduct}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,10,30,00"/>
 
 
                     <!--<Button Content="Apply" Height="40" Width="160" FontSize="30" FontFamily="times new roman" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00"/>-->
@@ -48,7 +48,7 @@
         </Border>
         <Grid >
         <Grid Background="White" Margin="10,250,10,10" Height="800" >
-                <Border CornerRadius="10 10 00 00" Background="#2c698d" Margin="10,10,10,10">
+                <Border CornerRadius="10 10 00 00" Background="#23664d" Margin="10,10,10,10">
 
                     <StackPanel Orientation="Horizontal"  >
                         <TextBlock Text="Product ID" Style="{DynamicResource product}" Width="160" />
@@ -61,7 +61,7 @@
                     </StackPanel>
                 </Border>
                 <ListView  Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
-                          x:Name="Product" Margin="10,70,10,10" ItemsSource="{Binding Product}" Height="720" Background="WhiteSmoke" BorderBrush="#2c698d" BorderThickness="3" >
+                          x:Name="Product" Margin="10,70,10,10" ItemsSource="{Binding Product}" Height="720" Background="WhiteSmoke" BorderBrush="#23664d" BorderThickness="3" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <Grid Height="50" Margin="6">
