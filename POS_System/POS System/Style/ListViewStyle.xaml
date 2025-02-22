@@ -1,0 +1,87 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="ListView" x:Key="List">
+
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Foreground" Value="#23664d"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontFamily" Value="times new roman"/>
+        <Setter Property="BorderBrush" Value="#23664d"/>
+        
+        
+
+    </Style>
+
+    <Style TargetType="ListView" x:Key="TPurchesList">
+
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="times new roman"/>
+        <Setter Property="BorderBrush" Value="#23664d"/>
+
+
+
+    </Style>
+
+    <Style TargetType="Button" x:Key="ListViewButton">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderBrush" Value="#23664d"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontFamily" Value="times new roman"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="#23664d"/>
+
+
+    </Style>
+
+
+
+    <Style TargetType="TextBlock" x:Key="PurchesListView">
+        <Setter Property="FontFamily" Value="times new roman"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="Foreground" Value="#23664d"/>
+
+
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="product">
+
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="35"/>
+        <Setter Property="FontFamily" Value="times new roman"/>
+        <Setter Property="Margin" Value="30,20,00,700"/>
+
+
+    </Style>
+
+
+
+
+
+    <SolidColorBrush x:Key="ListBox.Disabled.Background" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="ListBox.Disabled.Border" Color="#FFD9D9D9"/>
+    <ControlTemplate x:Key="ListViewTemplate1" TargetType="{x:Type ListBox}">
+        <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="1" SnapsToDevicePixels="true">
+            <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}">
+                <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+            </ScrollViewer>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Background" TargetName="Bd" Value="{StaticResource ListBox.Disabled.Background}"/>
+                <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource ListBox.Disabled.Border}"/>
+            </Trigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsGrouping" Value="true"/>
+                    <Condition Property="VirtualizingPanel.IsVirtualizingWhenGrouping" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+            </MultiTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+</ResourceDictionary>
