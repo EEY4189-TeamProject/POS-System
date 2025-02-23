@@ -10,18 +10,18 @@
 
     <Grid  >
         <Grid.Effect>
-            <DropShadowEffect BlurRadius="20" Color="#227EB8"  >
+            <DropShadowEffect BlurRadius="20" Color="#23664d" >
             </DropShadowEffect>
         </Grid.Effect>
-        <Border CornerRadius="20" Height="360" Width="400" Background="#227EB8"  BorderThickness="2" BorderBrush="Transparent">
+        <Border CornerRadius="20" Height="360" Width="400" Background="#23664d"  BorderThickness="2" BorderBrush="Transparent">
         <Border CornerRadius="20" Height="340" Width="380" Background="White"  BorderThickness="2" BorderBrush="Transparent">
         
             <StackPanel Orientation="Vertical" >
                 <Button Command="{Binding Logout}" Background="Transparent" fa5:Awesome.Content="Solid_WindowClose" BorderBrush="Transparent" Foreground="red" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5"/>
             <!--<Button Background="Transparent" BorderBrush="Transparent" Foreground="Red"  FontSize="20" fa5:Awesome.Content="Solid_Times"  Command="{Binding Logout}" />-->
-                <Label fa5:Awesome.Content="Solid_User" FontSize="100" HorizontalAlignment="Center" Foreground="#227EB8" Margin="00 -20 00 20"/>
+                    <Label fa5:Awesome.Content="Solid_User" FontSize="100" HorizontalAlignment="Center" Foreground="#23664d" Margin="00 -20 00 20"/>
 
-                <TextBlock Text="Login" HorizontalAlignment="Center"  FontFamily="times new roman" FontSize="30" Foreground="#2c698d" Margin="00 -10 00 00"/>
+                    <TextBlock Text="Login" HorizontalAlignment="Center"  FontFamily="times new roman" FontSize="30" Foreground="#23664d" Margin="00 -10 00 00"/>
 
             <StackPanel Orientation="Horizontal" >
                 <TextBlock Text="Username" Margin="30,20,00,00" FontSize="20" FontFamily="times new roman"/>
