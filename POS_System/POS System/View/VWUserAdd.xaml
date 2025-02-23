@@ -7,13 +7,13 @@
         xmlns:local="clr-namespace:SalesSystem_05._11._2022.View"
         mc:Ignorable="d"
           Title="VWProductAdd" Height="400" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" >
-    <Grid Background="#2c698d" >
+    <Grid Background="#23664d" >
         <Grid  Height="390" Width="440" Background="WhiteSmoke">
             
 
         <Button  Command="{Binding cmdUserExit}" fa5:Awesome.Content="Solid_WindowClose" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="03 ,-2,00,00" Height="20" Width="20" BorderBrush="Transparent" Foreground="red" Background="Transparent"/>
 
-        <Border Height="360" Width="430" Background="#2c698d" CornerRadius="20">
+        <Border Height="360" Width="430" Background="#23664d" CornerRadius="20">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="160"/>
@@ -45,8 +45,8 @@
                     </ComboBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
-                    <Button Height="30" Width="100" FontFamily="times new roman" FontSize="20" Margin="18,-20,00,00"  Content="{Binding btnAdd}" Command="{Binding cmdUserSave}" Foreground="#2c698d"/>
-                    <Button Height="30" Width="100" FontFamily="times new roman" FontSize="20" Margin="40,-20,00,00" Content="{Binding btnCancel}" Command="{Binding cmdUserExit}" Foreground="#2c698d"/>
+                    <Button Height="30" Width="100" FontFamily="times new roman" FontSize="20" Margin="18,-20,00,00"  Content="{Binding btnAdd}" Command="{Binding cmdUserSave}" Foreground="#23664d"/>
+                    <Button Height="30" Width="100" FontFamily="times new roman" FontSize="20" Margin="40,-20,00,00" Content="{Binding btnCancel}" Command="{Binding cmdUserExit}" Foreground="#23664d"/>
                 </StackPanel>
             </Grid>
         </Border>
