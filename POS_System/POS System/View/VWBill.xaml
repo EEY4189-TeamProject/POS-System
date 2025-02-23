@@ -75,7 +75,7 @@
             <TextBlock Text=" -----------------------------------------------------------------------"  Margin="10 00 00 00"/>
 
             <TextBlock Text="Thank you..! Come Again.." FontFamily="times new roman" FontSize="15" Margin="10,20,00,00" HorizontalAlignment="Center"/>
-            <Button Command="{Binding cmdClose}" BorderThickness="2" BorderBrush="Blue" Content="OK"  Foreground="White" Height="30" Background="DodgerBlue" Width="30" FontSize="15" Margin="00,20,00,00"/>
+            <Button Command="{Binding cmdClose}" BorderThickness="2" BorderBrush="Green" Content="OK"  Foreground="White" Height="30" Background="Green" Width="30" FontSize="15" Margin="00,20,00,00"/>
 
         </StackPanel>
     </Border>
