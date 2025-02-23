@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:Sales_Management_System.View" xmlns:viewmodel="clr-namespace:Sales_Management_System.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:VMPurches}"
              mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
              d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
-    <Grid Background="#2c698d">
+    <Grid Background="#23664d">
         <Border Background="White" Margin="20" CornerRadius="10" Height="1030">
 
             <Grid>
@@ -30,23 +30,23 @@
                 <StackPanel Grid.Row="2"  Orientation="Vertical" Background="WhiteSmoke" Margin="10,10,00,-45">
                     <Border Margin="00,40,00,100">
                         <StackPanel Orientation="Horizontal"   >
-                            <TextBlock Text="Total" FontSize="30" FontFamily="times new roman" Width="300" Margin="20,50,00,00" Foreground="#2c698d" Height="50" />
-                            <TextBlock Height="50" Text="{Binding Finaltotal, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="20,50,00,00" Foreground="#2c698d" FontSize="30" FontFamily="times new roman"/>
-                            <TextBlock Height="50" Text=".00" Foreground="#2c698d" FontSize="30" FontFamily="times new roman" Margin="00,50,00,00"/>
+                            <TextBlock Text="Total" FontSize="30" FontFamily="times new roman" Width="300" Margin="20,50,00,00" Foreground="#23664d" Height="50" />
+                            <TextBlock Height="50" Text="{Binding Finaltotal, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="20,50,00,00" Foreground="#23664d" FontSize="30" FontFamily="times new roman"/>
+                            <TextBlock Height="50" Text=".00" Foreground="#23664d" FontSize="30" FontFamily="times new roman" Margin="00,50,00,00"/>
                         </StackPanel>
                     </Border>
 
                 </StackPanel>
 
                 <StackPanel Grid.Column="1"  Orientation="Horizontal" Margin="10,10,10,00" Background="WhiteSmoke">
-                    <TextBlock Text="Search" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Margin="60,40,00,00" Foreground="#2c698d"/>
-                    <ComboBox Foreground="#2c698d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,30,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                    <TextBlock Text="Search" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Margin="60,40,00,00" Foreground="#23664d"/>
+                    <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,30,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <ComboBoxItem Content="Product Name"/>
                         <ComboBoxItem Content="Product Price"/>
                     </ComboBox>
-                    <TextBox Foreground="#2c698d" Height="40" Width="600" Margin="20,30,00,00" FontSize="30" FontFamily="times new roman" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
-                    <Button Foreground="#2c698d" fa5:Awesome.Content="Solid_Search" Height="40" Width="40" Margin="5,30,00,00" FontSize="20"  Background="White"  Command="{Binding  cmdSearch}"/>
-                    <Button Foreground="#2c698d" fa5:Awesome.Content="Solid_Undo" Height="40" Width="40" Margin="5,30,00,00" FontSize="20"  Background="White" Command="{Binding cmdPurReset}"/>
+                    <TextBox Foreground="#23664d" Height="40" Width="600" Margin="20,30,00,00" FontSize="30" FontFamily="times new roman" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Foreground="#23664d" fa5:Awesome.Content="Solid_Search" Height="40" Width="40" Margin="5,30,00,00" FontSize="20"  Background="White"  Command="{Binding  cmdSearch}"/>
+                    <Button Foreground="#23664d" fa5:Awesome.Content="Solid_Undo" Height="40" Width="40" Margin="5,30,00,00" FontSize="20"  Background="White" Command="{Binding cmdPurReset}"/>
                 </StackPanel>
 
                 <Grid Background="White" Grid.Row="1" Grid.Column="1" Margin="10 10 10 00" >
@@ -94,16 +94,16 @@
 
 
                             <StackPanel Orientation="Horizontal" >
-                                <TextBlock Text="Payment" FontSize="30" FontFamily="times new roman" Width="260" Margin="30,30,00,00" Foreground="#2c698d" Height="50" />
-                                <TextBox  Text="{Binding Payment, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="190" Margin="20,10,00,00" Height="40" Foreground="#2c698d" FontSize="30" FontFamily="times new roman"/>
+                                <TextBlock Text="Payment" FontSize="30" FontFamily="times new roman" Width="260" Margin="30,30,00,00" Foreground="#23664d" Height="50" />
+                                <TextBox  Text="{Binding Payment, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="190" Margin="20,10,00,00" Height="40" Foreground="#23664d" FontSize="30" FontFamily="times new roman"/>
                                 <Button Style="{StaticResource button}"  Template="{DynamicResource ButtonTemplate2}" Command="{Binding cmdBalance}"  FontSize="30" Width="100" Height="40" Content="Pay" Margin="10,10,00,00"/>
 
                                 <!--<Button Height="50" Width="200" Content="Payment" FontSize="40" FontFamily="times new roman" Foreground="#2c698d"/>
                         <Button Height="50" Width="200" Content="Void" FontSize="40" FontFamily="times new roman" Foreground="#2c698d" Margin="20,00,00,00"/>-->
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Balance" FontSize="30" FontFamily="times new roman" Width="260" Margin="30,10,00,00" Foreground="#2c698d" Height="50"/>
-                                <TextBox Text="{Binding Balance}" FontSize="30" FontFamily="times new roman" Width="190" Margin="20,-10,00,00" Foreground="#2c698d" Height="40"/>
+                                <TextBlock Text="Balance" FontSize="30" FontFamily="times new roman" Width="260" Margin="30,10,00,00" Foreground="#23664d" Height="50"/>
+                                <TextBox Text="{Binding Balance}" FontSize="30" FontFamily="times new roman" Width="190" Margin="20,-10,00,00" Foreground="#23664d" Height="40"/>
                                 <Button Style="{StaticResource button}"  Template="{DynamicResource ButtonTemplate2}" Command="{Binding cmdVoid}" FontSize="30" FontFamily="times new roman" Width="100" Height="40" Content="Void" Margin="10,-10,00,00"/>
 
                                 <!--<Button  Command="{Binding cmdBill}" FontSize="30" FontFamily="times new roman" Width="200" Foreground="#2c698d" Height="50" Content="Print bill" Margin="30,10,00,00"/>-->
@@ -112,12 +112,12 @@
                         </StackPanel>
                         <!--<Image Source=""/>-->
                         <StackPanel>
-                           <TextBlock Text="Smart shopping...." VerticalAlignment="Center" Margin="50,30,00,00" FontSize="40" FontFamily="times new roman" Foreground="#2c698d"/>
-                           <TextBlock Text="        Smart living...." VerticalAlignment="Center" Margin="50,00,00,00" FontSize="40" FontFamily="times new roman" Foreground="#2c698d"/>
+                            <TextBlock Text="Smart shopping...." VerticalAlignment="Center" Margin="50,30,00,00" FontSize="40" FontFamily="times new roman" Foreground="#23664d"/>
+                            <TextBlock Text="        Smart living...." VerticalAlignment="Center" Margin="50,00,00,00" FontSize="40" FontFamily="times new roman" Foreground="#23664d"/>
 
                         </StackPanel>
 
-                        <Label fa5:Awesome.Content="Solid_Smile" FontSize="100" Foreground="#2c698d" Margin="00 10 00 00"/>
+                        <Label fa5:Awesome.Content="Solid_Smile" FontSize="100" Foreground="#23664d" Margin="00 10 00 00"/>
 
                     </StackPanel>
                 </Grid>
@@ -125,8 +125,8 @@
                 <StackPanel  Orientation="Vertical" Grid.Row="0"  Background="WhiteSmoke" Margin="10,10,00,00">
 
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Date : " FontSize="25" FontFamily="times new roman" Foreground="#2c698d" Margin=" 10,20,400,00"/>
-                        <TextBlock Name="datelbl" FontSize="25" FontFamily="times new roman" Foreground="#2c698d" Margin=" -285,20,00,00"/>
+                        <TextBlock Text="Date : " FontSize="25" FontFamily="times new roman" Foreground="#23664d" Margin=" 10,20,400,00"/>
+                        <TextBlock Name="datelbl" FontSize="25" FontFamily="times new roman" Foreground="#23664d" Margin=" -285,20,00,00"/>
 
                         <!--<TextBlock Text="{Binding DT, StringFormat={}{0:dd.MM.yyyy   hh:mm:ss tt}}" FontSize="25" FontFamily="times new roman" Foreground="#2c698d" Margin=" -265,20,00,00"/>-->
                     </StackPanel>
