@@ -14,14 +14,14 @@
             <StackPanel Orientation="Horizontal">
 
                     <Label fa5:Awesome.Content="Solid_User"  FontSize="150" VerticalAlignment="Center" Foreground="#23664d" Margin="20,00,00,00"/>
-                    <TextBlock Text="User Details" FontSize="50" FontFamily="times new roman" VerticalAlignment="Center" Foreground="#23664d" Margin="20,100,320,00"/>
+                    <TextBlock Text="User Details" FontSize="35" FontFamily="times new roman" VerticalAlignment="Center" Foreground="#23664d" Margin="20,100,-250,00"/>
 
 
                 <StackPanel Orientation="Vertical" >
                     
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="50,50,30,00">
-                    <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" />
-                    <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00">
+                    <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" RenderTransformOrigin="-0.378,0.55" />
+                    <ComboBox Foreground="#23664d" Height="40" Width="120" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <ComboBoxItem Content="User ID"/>
                         <ComboBoxItem Content="User Name"/>
                         <ComboBoxItem Content="Status"/>
@@ -68,12 +68,12 @@
                 <Border CornerRadius="10 10 00 00" Background="#23664d" Margin="10,10,10,10">
 
                     <StackPanel Orientation="Horizontal"  >
-                        <TextBlock Text="User ID" Width="200" Style="{DynamicResource product}"/>
-                        <TextBlock Text="User Name" Width="300" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Password" Width="300" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Status" Width="200" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Edit" Width="260" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Delete" Width="200" Style="{DynamicResource product}"/>
+                        <TextBlock Text="User ID" Width="150" Style="{DynamicResource product}"/>
+                        <TextBlock Text="User Name" Width="180" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Password" Width="150" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Status" Width="120" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Edit" Width="100" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Delete" Width="100" Style="{DynamicResource product}"/>
                     </StackPanel>
                 </Border>
                 <ListView Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
@@ -82,16 +82,16 @@
                         <DataTemplate>
                             <Grid Height="50" Margin="6">
                                 <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="10"  >
-                                    <TextBlock Text="{Binding UserId}" TextWrapping="NoWrap"  Width="240"  />
-                                    <TextBlock Text="{Binding UserName}" TextWrapping="NoWrap" Width="330" />
-                                    <TextBlock Text="{Binding Password}" Width="330" />
-                                    <TextBlock Text="{Binding IsActive}" Width="180" />
+                                    <TextBlock Text="{Binding UserId}" TextWrapping="NoWrap"  Width="190"  />
+                                    <TextBlock Text="{Binding UserName}" TextWrapping="NoWrap" Width="200" />
+                                    <TextBlock Text="{Binding Password}" Width="200" />
+                                    <TextBlock Text="{Binding IsActive}" Width="100" />
                                     <!--<ComboBox  Width="100"  >
                                     <ComboBoxItem Content="Active" />
                                         <ComboBoxItem Content="DeActive"/>
                                     </ComboBox>-->
                                     <Button fa5:Awesome.Content="Solid_Edit" Foreground="blue" BorderBrush="Transparent" FontSize="25" Background="Transparent" Margin="50,00,00,00"  Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdUpdate}" CommandParameter="{Binding}" />
-                                    <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" FontSize="25" Margin="280,00,00,00" Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdUserDelete}" CommandParameter="{Binding}"/>
+                                    <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" FontSize="25" Margin="120,00,00,00" Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdUserDelete}" CommandParameter="{Binding}"/>
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>
