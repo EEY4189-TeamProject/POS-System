@@ -24,7 +24,7 @@
                         <ComboBoxItem Content="Product Name"/>
                         <ComboBoxItem Content="Product Price"/>
                     </ComboBox>
-                    <TextBox Foreground="#2c698d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="10,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBox Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="10,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                             <Button Foreground="#23664d" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Background="White" Command="{Binding cmdSearch}">
                         <Label fa5:Awesome.Content="Solid_Search" />
                     </Button>
