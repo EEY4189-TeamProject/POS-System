@@ -26,5 +26,10 @@ namespace SalesSystem_05._11._2022.View
             InitializeComponent();
             this.DataContext = new VMUser();
         }
+
+        private void Product_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

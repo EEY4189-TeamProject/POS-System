@@ -15,7 +15,7 @@ namespace Sales_Management_System.ViewModel
         //static string ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ToString();
 
         // static string ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ToString();
-         static string ConnectionString = @"Data Source=KETHUSHA;Initial Catalog=SalesManagementWPF; TrustServerCertificate=False; Integrated Security = True";
+         static string ConnectionString = @"Data Source=DANU\SQLEXPRESS;Initial Catalog=SalesManagementWPF; TrustServerCertificate=False; Integrated Security = True";
 
 
         public static bool DBConnection()
