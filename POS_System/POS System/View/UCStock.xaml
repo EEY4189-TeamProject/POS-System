@@ -5,20 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:Sales_Management_System.View"
-             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
-             d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
+             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
     <Grid Background="#23664d">
         <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
         <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
 
             <StackPanel Orientation="Horizontal">
                     <Label fa5:Awesome.Content="Solid_ShoppingCart" VerticalAlignment="Center" FontSize="150" Foreground="#23664d"/>
-                    <TextBlock Text="Stock Details" FontSize="50" FontFamily="times new roman" Margin="20,120,440,20" VerticalAlignment="Center" Foreground="#23664d" />
+                    <TextBlock Text="Stock Details" FontSize="35" FontFamily="times new roman" Margin="20,120,60,20" VerticalAlignment="Center" Foreground="#23664d" />
 
                 <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00" >
                             <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00" Foreground="#23664d"/>
-                            <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <ComboBox Foreground="#23664d" Height="40" Width="120" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <!--<ComboBoxItem Content="Stock ID"/>-->
                         <ComboBoxItem Content="Product ID"/>
                         <ComboBoxItem Content="Product Name"/>
@@ -42,10 +41,10 @@
 
                 <StackPanel Orientation="Horizontal">
                     <!--<TextBlock Text="Stock ID" FontSize="35" FontFamily="Times new roman" Margin="30,20,00,700" Width="180" Foreground="#1565C0"/>-->
-                    <TextBlock Text="Product ID" Margin="30,20,00,670" Width="200" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Product Name" Margin="30,20,00,670" Width="400" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Product Price" Margin="30,20,00,670" Width="280" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Product Quantity" Margin="30,20,00,670" Width="310" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Product ID" Margin="30,20,00,670" Width="160" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Product Name" Margin="30,20,00,670" Width="200" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Product Price" Margin="30,20,00,670" Width="200" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Product Quantity" Margin="30,20,00,670" Width="250" Style="{DynamicResource product}"/>
                     <TextBlock Text="Edit" FontSize="35" Margin="30,20,00,670" Width="100" Style="{DynamicResource product}"/>
                     <!--<TextBlock Text="Delete" FontSize="35" Margin="30,20,00,670"  Style="{DynamicResource product}"/>-->
 
@@ -59,10 +58,10 @@
                         <Grid Height="50" Margin="6">
                             <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="10" >
                                 <!--<TextBlock Text="{Binding StockId}" TextWrapping="NoWrap"  Width="200" />-->
-                                <TextBlock Text="{Binding ProductId}" TextWrapping="NoWrap"  Width="250" />
-                                <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="410" />
-                                <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="320" />
-                                <TextBlock Text="{Binding ProductQuantity}" Width="310" />
+                                <TextBlock Text="{Binding ProductId}" TextWrapping="NoWrap"  Width="200" />
+                                <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="225" />
+                                <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="230" />
+                                <TextBlock Text="{Binding ProductQuantity}" Width="250" />
                                 <Button fa5:Awesome.Content="Solid_Edit"  Foreground="blue" Margin="40,00,00,00" BorderBrush="Transparent" FontSize="25" Background="Transparent"   Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdSUpdate}" CommandParameter="{Binding}" />
                                 <!--<Button fa5:Awesome.Content="Solid_Trash" Foreground="red" Margin="100,00,00,00" FontSize="25"  Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdStockDelete}" CommandParameter="{Binding}"/>-->
 
