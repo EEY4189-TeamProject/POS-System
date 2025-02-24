@@ -14,13 +14,13 @@
 
             <StackPanel Orientation="Horizontal">
                     <Label fa5:Awesome.Content="Solid_ShoppingBasket" FontSize="150" Foreground="#23664d" VerticalAlignment="Center"/>
-                    <TextBlock Text="Product Details" FontSize="50" FontFamily="times new roman" Margin="20,100,400,20" Foreground="#23664d" VerticalAlignment="Center"/>
+                    <TextBlock Text="Product Details" FontSize="35" FontFamily="times new roman" Margin="00,100,50,20" Foreground="#23664d" VerticalAlignment="Center"/>
 
 
                 <StackPanel Orientation="Vertical" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00">
                             <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" />
-                            <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <ComboBox Foreground="#23664d" Height="40" Width="150" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <ComboBoxItem Content="Product ID"/>
                         <ComboBoxItem Content="Product Name"/>
                         <ComboBoxItem Content="Product Price"/>
@@ -52,12 +52,12 @@
 
                     <StackPanel Orientation="Horizontal"  >
                         <TextBlock Text="Product ID" Style="{DynamicResource product}" Width="160" />
-                        <TextBlock Text="Product Name" Style="{DynamicResource product}" Width="250" />
-                        <TextBlock Text="Supplier" Width="250" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Price" Width="200" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Quantity" Width="200" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Edit" Width="200" Style="{DynamicResource product}"/>
-                        <TextBlock Text="Delete" Width="200" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Product Name" Style="{DynamicResource product}" Width="200" />
+                        <TextBlock Text="Supplier" Width="120" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Price" Width="70" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Quantity" Width="120" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Edit" Width="60" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Delete" Width="90" Style="{DynamicResource product}"/>
                     </StackPanel>
                 </Border>
                 <ListView  Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
@@ -67,12 +67,12 @@
                             <Grid Height="50" Margin="6">
                                 <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="10"  >
                                     <TextBlock Text="{Binding ProductId}" TextWrapping="NoWrap"  Width="200"  />
-                                    <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="280" />
-                                    <TextBlock Text="{Binding SupplierName}" TextWrapping="NoWrap" Width="280" />
-                                    <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="230" />
-                                    <TextBlock Text="{Binding ProductQuantity}" Width="150" />
+                                    <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="225" />
+                                    <TextBlock Text="{Binding SupplierName}" TextWrapping="NoWrap" Width="150" />
+                                    <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="110" />
+                                    <TextBlock Text="{Binding ProductQuantity}" Width="80" />
                                     <Button fa5:Awesome.Content="Solid_Edit" Foreground="blue" BorderBrush="Transparent" FontSize="25" Background="Transparent" Margin="80,00,00,00"  Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdUpdate}" CommandParameter="{Binding}" />
-                                    <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" FontSize="25" Margin="200,00,00,00" Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdProductDelete}" CommandParameter="{Binding}"/>
+                                    <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" FontSize="25" Margin="70,00,00,00" Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdProductDelete}" CommandParameter="{Binding}"/>
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>

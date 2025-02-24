@@ -12,12 +12,12 @@
 
             <StackPanel Orientation="Horizontal">
                     <Label fa5:Awesome.Content="Solid_ShoppingCart" VerticalAlignment="Center" FontSize="150" Foreground="#23664d"/>
-                    <TextBlock Text="Stock Details" FontSize="35" FontFamily="times new roman" Margin="20,120,60,20" VerticalAlignment="Center" Foreground="#23664d" />
+                    <TextBlock Text="Stock Details" FontSize="35" FontFamily="times new roman" Margin="00,120,60,20" VerticalAlignment="Center" Foreground="#23664d" />
 
                 <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00" >
                             <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00" Foreground="#23664d"/>
-                            <ComboBox Foreground="#23664d" Height="40" Width="120" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <ComboBox Foreground="#23664d" Height="40" Width="150" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <!--<ComboBoxItem Content="Stock ID"/>-->
                         <ComboBoxItem Content="Product ID"/>
                         <ComboBoxItem Content="Product Name"/>
