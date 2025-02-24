@@ -5,116 +5,87 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:SalesSystem_05._11._2022.View"
-             mc:Ignorable="d"  
-             d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
-             d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
-
-    <Grid Background="#2c698d">
-
-        <!-- Header Section -->
+             mc:Ignorable="d"  d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
+    <!-- Defines a UserControl with dynamic height and fixed width -->
+    <Grid Background="#23664d">
+        <!-- Border for Supplier Details Section -->
         <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
             <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
-
+                <!-- Horizontal layout for Supplier Details -->
                 <StackPanel Orientation="Horizontal">
-                    <!-- FontAwesome Icon -->
-                    <Label fa5:Awesome.Content="Solid_Users" Foreground="#2c698d" FontSize="150" VerticalAlignment="Center"/>
+                    <Label fa5:Awesome.Content="Solid_Users" Foreground="#23664d" FontSize="150" VerticalAlignment="Center"/>
+                    <!-- Large FontAwesome user icon -->
+                    <TextBlock Text="Supplier Details" FontSize="35" FontFamily="times new roman" VerticalAlignment="Center" Margin="00,100,20,00" Foreground="#23664d"/>
 
-                    <!-- Supplier Details Title -->
-                    <TextBlock Text="Supplier Details" FontSize="50" FontFamily="times new roman" 
-                               VerticalAlignment="Center" Margin="20,100,330,20" Foreground="#256D85"/>
-
+                    <!-- Search Section -->
                     <StackPanel Orientation="Vertical">
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,30,0">
-
-                            <!-- Search Label -->
-                            <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" 
-                                       Text="Search" Margin="0,20,0,0" Foreground="#2c698d"/>
-
-                            <!-- Search Dropdown -->
-                            <ComboBox Foreground="#2c698d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" 
-                                      Margin="0,20,0,0" Text="{Binding Field, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00">
+                            <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00" Foreground="#23664d"/>
+                            <ComboBox Foreground="#23664d" Height="40" Width="150" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                <!--<ComboBoxItem Content="Stock ID"/>-->
                                 <ComboBoxItem Content="Supplier ID"/>
                                 <ComboBoxItem Content="Supplier Name"/>
                                 <ComboBoxItem Content="Address"/>
                             </ComboBox>
-
-                            <!-- Search Input -->
-                            <TextBox Foreground="#2c698d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" 
-                                     Margin="50,20,0,0" Background="White" 
-                                     Text="{Binding Find, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-
-                            <!-- Search Button -->
-                            <Button Command="{Binding cmdSearch}" Height="40" Width="50" FontSize="20" FontFamily="times new roman" 
-                                    Margin="0,20,0,0" Background="White">
-                                <Label fa5:Awesome.Content="Solid_Search" Foreground="#2c698d"/>
+                            <TextBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="50,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <Button Command="{Binding cmdSearch}" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Background="White" >
+                                <Label fa5:Awesome.Content="Solid_Search" Foreground="#23664d"/>
                             </Button>
 
                         </StackPanel>
+                        <!-- TextBox for search input -->
+                        <Button  Command="{Binding cmdSupplierReset}" Background="White" BorderBrush="#23664d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                        <Button fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" HorizontalAlignment="Right" Margin="00,10,30,0" Background="White" Command="{Binding  cmdAddSupplier}"/>
 
-                        <!-- Reset Button -->
-                        <Button Command="{Binding cmdSupplierReset}" Background="White" BorderBrush="#2c698d"  
-                                fa5:Awesome.Content="Solid_Undo" Foreground="Blue" 
-                                Margin="0,10,30,0" Height="40" Width="50" FontSize="20" 
-                                VerticalAlignment="Top" HorizontalAlignment="Right" />
+                        <!--<Button Content="Apply" Height="40" Width="160" FontSize="30" FontFamily="times new roman" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00"/>-->
 
-                        <!-- Add Supplier Button -->
-                        <Button fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" 
-                                FontSize="30" HorizontalAlignment="Right" Margin="0,10,30,0" 
-                                Background="White" Command="{Binding cmdAddSupplier}"/>
-
+                        <!--<Button Command="{Binding cmdStockReset}" Content="Reset" Height="40" Width="160" FontSize="30" FontFamily="times new roman" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00"/>-->
                     </StackPanel>
+
+
                 </StackPanel>
 
             </Border>
         </Border>
 
-        <!-- Supplier List Grid -->
-        <Grid Background="White" Margin="10,250,10,10" Height="800">
-            <Border CornerRadius="10 10 0 0" Background="#2c698d" Margin="10,10,10,10">
+
+        <Grid Background="White" Margin="10,250,10,10" Height="800" >
+            <Border CornerRadius="10 10 00 00" Background="#23664d" Margin="10,10,10,10">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Supplier ID" Width="200" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Supplier Name" Width="380" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Phone Number" Width="280" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Address" Width="300" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Edit" Width="160" Style="{DynamicResource product}"/>
+                    <!--<TextBlock Text="Stock ID" FontSize="35" FontFamily="Times new roman" Margin="30,20,00,700" Width="180" Foreground="#1565C0"/>-->
+                    <TextBlock Text="Supplier ID" Width="165" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Supplier Name" Width="220" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Phone Number" Width="215" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Address" Width="120" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Edit" Width="60" Style="{DynamicResource product}"/>
                     <TextBlock Text="Delete" Style="{DynamicResource product}"/>
+
                 </StackPanel>
             </Border>
 
-            <!-- Supplier ListView -->
-            <ListView Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
-                      x:Name="Stock" Margin="10,50,10,-20" ItemsSource="{Binding Supplier}" 
-                      Height="710" Background="WhiteSmoke" BorderBrush="#2c698d" BorderThickness="3">
 
+            <ListView Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
+                      x:Name="Stock" Margin="10,50,10,-20" ItemsSource="{Binding Supplier}" Height="710" Background="WhiteSmoke" BorderBrush="#23664d" BorderThickness="3" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Height="50" Margin="6">
-                            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
-                                <TextBlock Text="{Binding SupplierId}" TextWrapping="NoWrap"  Width="250" />
-                                <TextBlock Text="{Binding SupplierName}" TextWrapping="NoWrap" Width="390" />
-                                <TextBlock Text="{Binding PhoneNumber}" Width="320" />
-                                <TextBlock Text="{Binding SupplierAddress}" Width="300" />
+                            <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="10"  >
+                                <!--<TextBlock Text="{Binding StockId}" TextWrapping="NoWrap"  Width="200" />-->
+                                <TextBlock Text="{Binding SupplierId}" TextWrapping="NoWrap"  Width="200" />
+                                <TextBlock Text="{Binding SupplierName}" TextWrapping="NoWrap" Width="250" />
+                                <TextBlock Text="{Binding PhoneNumber}" Width="250" />
+                                <TextBlock Text="{Binding SupplierAddress}" Width="120" />
+                                <Button fa5:Awesome.Content="Solid_Edit"  Foreground="blue" Margin="40,00,00,00" BorderBrush="Transparent" FontSize="25" Background="Transparent"   Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdUpdate}" CommandParameter="{Binding}" />
+                                <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" Margin="80,00,00,00" FontSize="25"  Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdSupplierDelete}" CommandParameter="{Binding}"/>
 
-                                <!-- Edit Button -->
-                                <Button fa5:Awesome.Content="Solid_Edit"  Foreground="blue" 
-                                        Margin="40,0,0,0" BorderBrush="Transparent" FontSize="25" 
-                                        Background="Transparent"   
-                                        Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdUpdate}" 
-                                        CommandParameter="{Binding}" />
-
-                                <!-- Delete Button -->
-                                <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" 
-                                        Margin="180,0,0,0" FontSize="25"  
-                                        Background="Transparent" BorderBrush="Transparent" 
-                                        Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdSupplierDelete}" 
-                                        CommandParameter="{Binding}"/>
                             </StackPanel>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-
             </ListView>
         </Grid>
+
+
 
     </Grid>
 </UserControl>
