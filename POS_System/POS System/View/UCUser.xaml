@@ -47,9 +47,6 @@
 
 
 
-                        <!--<Button Content="Apply" Height="40" Width="160" FontSize="30" FontFamily="times new roman" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00"/>-->
-                    <!--<Button fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Height="40" Width="50" FontSize="20"  Margin="00,-17,30,00" Command="{Binding cmdUserReset}" Background="White"/>-->
-                    <!--<Button  Command="{Binding cmdUserReset}" Background="White" BorderBrush="#2c698d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />-->
 
               
                 <!--<Button Command="{Binding cmdAddUser}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,-15,30,00" Background="White"/>-->

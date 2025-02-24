@@ -22,7 +22,6 @@
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00">
                     <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00" Foreground="#2c698d"/>
                     <ComboBox Foreground="#2c698d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                        <!--<ComboBoxItem Content="Stock ID"/>-->
                         <ComboBoxItem Content="Supplier ID"/>
                         <ComboBoxItem Content="Supplier Name"/>
                         <ComboBoxItem Content="Address"/>
