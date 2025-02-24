@@ -5,8 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:Sales_Management_System.View" xmlns:viewmodel="clr-namespace:Sales_Management_System.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:VMPurches}"
-             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
-             d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
+             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
+
+    <!-- <ScrollViewer VerticalScrollBarVisibility="Auto" > -->
+    <!-- <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="10"> -->
     <Grid Background="#23664d">
         <Border Background="White" Margin="20" CornerRadius="10" Height="1030">
 
@@ -39,19 +41,19 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1"  Orientation="Horizontal" Margin="10,10,10,00" Background="WhiteSmoke">
-                    <TextBlock Text="Search" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Margin="60,40,00,00" Foreground="#23664d"/>
-                    <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,30,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                    <TextBlock Text="Search" Height="40" Width="100" FontSize="25" FontFamily="times new roman" Margin="20,40,-20,00" Foreground="#23664d"/>
+                    <ComboBox Foreground="#23664d" Height="40" Width="145" FontSize="20" FontFamily="times new roman" Margin="00,30,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                         <ComboBoxItem Content="Product Name"/>
                         <ComboBoxItem Content="Product Price"/>
                     </ComboBox>
-                    <TextBox Foreground="#23664d" Height="40" Width="600" Margin="20,30,00,00" FontSize="30" FontFamily="times new roman" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBox Foreground="#23664d" Height="40" Width="160" Margin="20,30,00,00" FontSize="30" FontFamily="times new roman" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                     <Button Foreground="#23664d" fa5:Awesome.Content="Solid_Search" Height="40" Width="40" Margin="5,30,00,00" FontSize="20"  Background="White"  Command="{Binding  cmdSearch}"/>
                     <Button Foreground="#23664d" fa5:Awesome.Content="Solid_Undo" Height="40" Width="40" Margin="5,30,00,00" FontSize="20"  Background="White" Command="{Binding cmdPurReset}"/>
                 </StackPanel>
 
                 <Grid Background="White" Grid.Row="1" Grid.Column="1" Margin="10 10 10 00" >
                     <!--<Border Background="AliceBlue">-->
-                  
+
                     <ListView ItemsSource="{Binding ProductList}"
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled"  x:Name="ButtonPur"   BorderBrush="Transparent" Background="WhiteSmoke">
                         <ListView.ItemsPanel>
@@ -67,7 +69,7 @@
                                         </DropShadowEffect>
                                     </Grid.Effect>
                                     <Button BorderThickness="0" BorderBrush="{x:Null}" Style="{DynamicResource ListViewButton}" Margin="20" Command="{Binding Path=DataContext.cmdPurchesAdd,RelativeSource= {RelativeSource FindAncestor,AncestorType={x:Type ListView}}}" CommandParameter="{Binding}">
-                                        <StackPanel Width="220" Height="120" Orientation="Horizontal">
+                                        <StackPanel Width="180" Height="100" Orientation="Horizontal">
                                             <StackPanel Orientation="Vertical">
                                                 <TextBlock Text="{Binding ProductName}" Margin="20,30,00,00"/>
                                                 <StackPanel Orientation="Horizontal">
@@ -113,7 +115,7 @@
                         <!--<Image Source=""/>-->
                         <StackPanel>
                             <TextBlock Text="Smart shopping...." VerticalAlignment="Center" Margin="50,30,00,00" FontSize="40" FontFamily="times new roman" Foreground="#23664d"/>
-                            <TextBlock Text="        Smart living...." VerticalAlignment="Center" Margin="50,00,00,00" FontSize="40" FontFamily="times new roman" Foreground="#23664d"/>
+                            <TextBlock Text="Smart living...." VerticalAlignment="Center" Margin="50,00,00,00" FontSize="40" FontFamily="times new roman" Foreground="#23664d"/>
 
                         </StackPanel>
 
@@ -168,9 +170,9 @@
                                         <!--<Button Height="20" Width="20" Content="+"  FontSize="15"
                                                 Command="{Binding Path=DataContext.IncrementQTY, RelativeSource= {RelativeSource FindAncestor,AncestorType={x:Type ListView}}}" CommandParameter="{Binding}"/>-->
                                     </StackPanel>
-                                    
-                                    
-                                    
+
+
+
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="{Binding Total,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,StringFormat='C' }" Width="130" />
                                         <!--<TextBlock Text=".00" />-->
@@ -184,12 +186,13 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-              
-                
+
+
                 <!--</Grid>-->
             </Grid>
 
         </Border>
 
     </Grid>
+    <!-- </ScrollViewer> -->
 </UserControl>

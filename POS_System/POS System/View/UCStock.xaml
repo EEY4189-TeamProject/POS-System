@@ -6,35 +6,36 @@
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:Sales_Management_System.View"
              mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
+
     <Grid Background="#23664d">
         <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
-        <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
+            <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
 
-            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
                     <Label fa5:Awesome.Content="Solid_ShoppingCart" VerticalAlignment="Center" FontSize="150" Foreground="#23664d"/>
                     <TextBlock Text="Stock Details" FontSize="35" FontFamily="times new roman" Margin="00,120,60,20" VerticalAlignment="Center" Foreground="#23664d" />
 
-                <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00" >
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00" >
                             <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00" Foreground="#23664d"/>
                             <ComboBox Foreground="#23664d" Height="40" Width="150" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                        <!--<ComboBoxItem Content="Stock ID"/>-->
-                        <ComboBoxItem Content="Product ID"/>
-                        <ComboBoxItem Content="Product Name"/>
-                        <ComboBoxItem Content="Product Price"/>
-                    </ComboBox>
+                                <!--<ComboBoxItem Content="Stock ID"/>-->
+                                <ComboBoxItem Content="Product ID"/>
+                                <ComboBoxItem Content="Product Name"/>
+                                <ComboBoxItem Content="Product Price"/>
+                            </ComboBox>
                             <TextBox Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="10,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                             <Button Foreground="#23664d" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Background="White" Command="{Binding cmdSearch}">
-                        <Label fa5:Awesome.Content="Solid_Search" />
-                    </Button>
+                                <Label fa5:Awesome.Content="Solid_Search" />
+                            </Button>
 
-                </StackPanel>
+                        </StackPanel>
                         <Button  Command="{Binding cmdStockReset}" Background="White" BorderBrush="#23664d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                    </StackPanel>
+                    <!--<Button fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="40" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,30,30,00"/>-->
                 </StackPanel>
-                <!--<Button fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="40" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,30,30,00"/>-->
-            </StackPanel>
-     
-        </Border>
+
+            </Border>
         </Border>
         <Grid Background="White" Margin="10,250,10,10" Height="800">
             <Border CornerRadius="10 10 00 00" Background="#23664d" Margin="10,10,10,10">
@@ -50,7 +51,7 @@
 
                 </StackPanel>
             </Border>
-            
+
             <ListView Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
                       x:Name="Stock" Margin="10,50,10,-20" ItemsSource="{Binding Stock}" Height="720" Background="WhiteSmoke" BorderBrush="#23664d" BorderThickness="3" >
                 <ListView.ItemTemplate>

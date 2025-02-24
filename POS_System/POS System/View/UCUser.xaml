@@ -6,61 +6,62 @@
              xmlns:local="clr-namespace:SalesSystem_05._11._2022.View"
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
+
     <Grid Background="#23664d">
         <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
-        <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
+            <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
 
-            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
 
                     <Label fa5:Awesome.Content="Solid_User"  FontSize="150" VerticalAlignment="Center" Foreground="#23664d" Margin="20,00,00,00"/>
                     <TextBlock Text="User Details" FontSize="35" FontFamily="times new roman" VerticalAlignment="Center" Foreground="#23664d" Margin="20,100,-250,00"/>
 
 
-                <StackPanel Orientation="Vertical" >
-                    
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00">
-                    <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" RenderTransformOrigin="-0.378,0.55" />
-                    <ComboBox Foreground="#23664d" Height="40" Width="120" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                        <ComboBoxItem Content="User ID"/>
-                        <ComboBoxItem Content="User Name"/>
-                        <ComboBoxItem Content="Status"/>
-                     
-                    </ComboBox>
-                    
-                    <TextBox  Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="50,00,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
-                            <Button Foreground="#23664d" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Margin="00,00,00,00" Background="White" Command="{Binding cmdSearch}" >
-                        <Label fa5:Awesome.Content="Solid_Search" />
-                    </Button>
+                    <StackPanel Orientation="Vertical" >
 
-                </StackPanel>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,50,30,00">
+                            <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" RenderTransformOrigin="-0.378,0.55" />
+                            <ComboBox Foreground="#23664d" Height="40" Width="120" FontSize="20" FontFamily="times new roman" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                <ComboBoxItem Content="User ID"/>
+                                <ComboBoxItem Content="User Name"/>
+                                <ComboBoxItem Content="Status"/>
+
+                            </ComboBox>
+
+                            <TextBox  Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="50,00,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <Button Foreground="#23664d" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Margin="00,00,00,00" Background="White" Command="{Binding cmdSearch}" >
+                                <Label fa5:Awesome.Content="Solid_Search" />
+                            </Button>
+
+                        </StackPanel>
                         <StackPanel Orientation="Horizontal">
 
                             <Button Style="{DynamicResource ButtonStyle1}" Command="{Binding cmdUserReset}" Content="All" Background="#23664d" BorderBrush="White"  Foreground="White" Margin="500,10,30,00" Height="45" Width="90" FontSize="20" FontFamily="times new roman" />
                             <Button Command="{Binding cmdActive}" Content="Active" Background="#23664d" BorderBrush="White" Foreground="White" Margin="-30,10,30,00" Height="45" Width="90" FontSize="20"  FontFamily="times new roman"/>
                             <Button Command="{Binding cmdLeave}" Style="{DynamicResource ButtonStyle2}" Content="Leave" Background="#23664d" BorderBrush="White" Foreground="White" Margin="-30,10,30,00" Height="45" Width="100" FontSize="20"  FontFamily="times new roman"/>
-                           
+
                             <Button  Command="{Binding cmdUserReset}" Background="White" BorderBrush="#23664d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="-10,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />
 
                         </StackPanel>
-                    <Button Command="{Binding cmdAddUser}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,10,30,00" Background="White"/>
+                        <Button Command="{Binding cmdAddUser}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,10,30,00" Background="White"/>
 
 
 
                         <!--<Button Content="Apply" Height="40" Width="160" FontSize="30" FontFamily="times new roman" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00"/>-->
-                    <!--<Button fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Height="40" Width="50" FontSize="20"  Margin="00,-17,30,00" Command="{Binding cmdUserReset}" Background="White"/>-->
-                    <!--<Button  Command="{Binding cmdUserReset}" Background="White" BorderBrush="#2c698d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />-->
-
-              
-                <!--<Button Command="{Binding cmdAddUser}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,-15,30,00" Background="White"/>-->
-            </StackPanel>
+                        <!--<Button fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Height="40" Width="50" FontSize="20"  Margin="00,-17,30,00" Command="{Binding cmdUserReset}" Background="White"/>-->
+                        <!--<Button  Command="{Binding cmdUserReset}" Background="White" BorderBrush="#2c698d"  fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" />-->
 
 
+                        <!--<Button Command="{Binding cmdAddUser}" fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue"  Height="40" Width="50" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,-15,30,00" Background="White"/>-->
+                    </StackPanel>
 
-            </StackPanel>
-            
-            
-            
-        </Border>
+
+
+                </StackPanel>
+
+
+
+            </Border>
         </Border>
         <Grid>
             <Grid Background="White" Margin="10,250,10,10" Height="800">
