@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:Sales_Management_System.View"
-             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
-             d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
+             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
     <Grid Background="#23664d">
         <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
         <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
@@ -14,12 +13,11 @@
 
                
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <Label fa5:Awesome.Content="Solid_ShoppingCart" VerticalAlignment="Center" FontSize="150" Foreground="#23664d" Margin="00,20,00,00"/>
-
-                    <TextBlock Text="Void Sales" FontSize="50" FontFamily="times new roman" VerticalAlignment="Center" Margin="10,120,450,00" Foreground="#23664d"/>
+                    <Label fa5:Awesome.Content="Solid_ShoppingCart" VerticalAlignment="Center" FontSize="150" Foreground="#23664d" Margin="20,20,10,00"/>
+                    <TextBlock Text="Void Sales" FontSize="35" FontFamily="times new roman" VerticalAlignment="Center" Margin="00,110,70,00" Foreground="#23664d"/>
 
                     <TextBlock Foreground="#23664d" Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00"/>
-                            <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <ComboBox Foreground="#23664d" Height="40" Width="150" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                                 <ComboBoxItem Content="Purches Id"/>
                                 <ComboBoxItem Content="Product Name"/>
                                 <ComboBoxItem Content="Product Price"/>
@@ -27,7 +25,7 @@
                             </ComboBox>
 
                     <Grid>
-                        <TextBox Visibility="{Binding TextBox}" Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="50,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Visibility="{Binding TextBox}" Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="20,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                         <DatePicker Visibility="{Binding DatePicker}" Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="50,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
 
                     </Grid>
@@ -54,11 +52,11 @@
                 <StackPanel Orientation="Horizontal">
                     <!--<TextBlock Text="Stock ID" FontSize="35" FontFamily="Times new roman" Margin="30,20,00,700" Width="180" Foreground="#1565C0"/>-->
                     <TextBlock Text="Purches ID"  Width="200" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Product Name" Style="{DynamicResource product}" Margin="00,20,00,700" Width="400" />
-                    <TextBlock Text="Price" Margin="00,20,00,700" Width="180" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Qty" Margin="00,20,00,700" Width="240" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Total" Margin="00,20,00,700" Width="210" Style="{DynamicResource product}"/>
-                    <TextBlock Text="Date" Margin="00,20,00,700" Width="320" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Product Name" Style="{DynamicResource product}" Margin="00,20,00,700" Width="250" />
+                    <TextBlock Text="Price" Margin="00,20,00,700" Width="150" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Qty" Margin="00,20,00,700" Width="120" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Total" Margin="00,20,00,700" Width="150" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Date" Margin="00,20,00,700" Width="200" Style="{DynamicResource product}"/>
                     <!--<TextBlock Text="Delete" Margin="00,20,00,700"  Style="{DynamicResource product}"/>-->
 
                 </StackPanel>
@@ -69,12 +67,12 @@
                         <Grid Height="50" Margin="6">
                             <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="10"  >
                                 <!--<TextBlock Text="{Binding StockId}" TextWrapping="NoWrap"  Width="200" />-->
-                                <TextBlock Text="{Binding CPurchesId}" TextWrapping="NoWrap"  Width="200" />
-                                <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="400" />
-                                <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="200" />
-                                <TextBlock Text="{Binding PurchesQuantity}" Width="230" />
-                                <TextBlock Text="{Binding Total,StringFormat='C'}" Width="200" />
-                                <TextBlock Text="{Binding Date,StringFormat={}{0:MM/dd/yyyy }}" Width="230" />
+                                <TextBlock Text="{Binding CPurchesId}" TextWrapping="NoWrap"  Width="205" />
+                                <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="250" />
+                                <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="160" />
+                                <TextBlock Text="{Binding PurchesQuantity}" Width="110" />
+                                <TextBlock Text="{Binding Total,StringFormat='C'}" Width="145" />
+                                <TextBlock Text="{Binding Date,StringFormat={}{0:MM/dd/yyyy }}" Width="200" />
                                 <!--<Button fa5:Awesome.Content="Solid_Trash" Foreground="red" Margin="100,00,00,00" FontSize="25"  Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdCPurDel}" CommandParameter="{Binding}"/>-->
 
                             </StackPanel>
