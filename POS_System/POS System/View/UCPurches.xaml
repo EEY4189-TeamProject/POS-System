@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:fa5="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:Sales_Management_System.View" xmlns:viewmodel="clr-namespace:Sales_Management_System.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:VMPurches}"
-             mc:Ignorable="d" d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}" Width="1094">
+             mc:Ignorable="d" Width="1665" Height="1101">
 
     <!-- <ScrollViewer VerticalScrollBarVisibility="Auto" > -->
     <!-- <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="10"> -->
