@@ -16,7 +16,6 @@ namespace Sales_Management_System.ViewModel
 {
     public class VMPurches : VMBase
     {
-
         private ObservableCollection<MDStock> stock;
 
         public ObservableCollection<MDStock> Stock
@@ -34,7 +33,7 @@ namespace Sales_Management_System.ViewModel
             Purches.PurchesId = SQLConnection.ISData("tblMPurches") ? int.Parse(SQLConnection.CheckTableData("tblMPurches", "PurchesId", "PurchesId")) + 1 : 1;
             Purches.BillId = SQLConnection.ISData("tblBill") ? int.Parse(SQLConnection.CheckTableData("tblBill", "BillId", "BillId")) + 1 : 1;
 
-           // CPurches = new MDCPurches();
+            // CPurches = new MDCPurches();
             CPurches.Product = new MDProduct();
             CPurches.CPurchesId = SQLConnection.ISData("tblCPurches") ? int.Parse(SQLConnection.CheckTableData("tblCPurches", "CPurchesId", "CPurchesId")) + 1 : 1;
         }
@@ -70,8 +69,6 @@ namespace Sales_Management_System.ViewModel
 
 
 
-
-
         // Search query...
 
         //    public ICommand cmdStockToPurSearch { get { return new RelayCommand(StockToPurSearch); } }
@@ -86,7 +83,6 @@ namespace Sales_Management_System.ViewModel
 
 
         private string _field;
-
         public string Field
         {
             get { return _field; }
@@ -95,7 +91,6 @@ namespace Sales_Management_System.ViewModel
 
 
         private string _column;
-
         public string Column
         {
             get { return _column; }
@@ -107,13 +102,11 @@ namespace Sales_Management_System.ViewModel
         {
             try
             {
-
                 switch (Field)
                 {
                     case "Product Name":
                         Column = "ProductName";
                         break;
-
                     case "Product Price":
                         Column = "ProductPrice";
                         break;
@@ -149,7 +142,6 @@ namespace Sales_Management_System.ViewModel
             {
                 MessageBox.Show("Please select an option for search", "Product ", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
 
         public ICommand cmdSearch { get { return new RelayCommand(Search); } }
@@ -158,13 +150,11 @@ namespace Sales_Management_System.ViewModel
         {
             try
             {
-
                 switch (Field)
                 {
                     case "Product Name":
                         Column = "ProductName";
                         break;
-
                     case "Product Price":
                         Column = "ProductPrice";
                         break;
@@ -185,36 +175,24 @@ namespace Sales_Management_System.ViewModel
                         SupplierName = (SQLConnection.SpaficDataISINTable("tblSupplier", "SupplierName", "SupplierId", reader.GetValue(2).ToString())),
                         ProductPrice = Convert.ToDouble(reader.GetValue(3)),
                         ProductQuantity = (int)reader.GetValue(4),
-
                     });
                 }
                 SQLConnection.close_Connection();
-                if(ProductList.Count==0)
+                if (ProductList.Count == 0)
                 {
                     MessageBox.Show("Data not found", " Search", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-
             }
             catch
             {
                 MessageBox.Show("Please select an option for search", "Product ", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
-    
-
-
-
-
-
 
 
 
         public DateTime DT { get; set; } = DateTime.Now;
-
-
-
 
         public ICommand cmdPurchesAdd { get { return new RelayCommand(PurchesAdd); } }
 
@@ -229,7 +207,6 @@ namespace Sales_Management_System.ViewModel
                     // if (SalesList.Any(salse => salse.Quantity < Quantity) || SalesList.Count == 0)
                     if (PurchesList.Any(Qty => Qty.PurchesQuantity < Quantity) || PurchesList.Count == 0)
                     {
-
                         if (!PurchesList.Any(purchase => purchase.Product == Product))
                         {
                             MDMPurches pur = new MDMPurches()
@@ -241,9 +218,8 @@ namespace Sales_Management_System.ViewModel
                                 Date = DateTime.Now,
 
                             };
-                           
-                            PurchesList.Add(pur);
 
+                            PurchesList.Add(pur);
                             //pur.PurchesId = PurchesList.Count == null ? 1 : PurchesList.Count;
                         }
                         else
@@ -277,12 +253,9 @@ namespace Sales_Management_System.ViewModel
         void Reset(object param)
         {
             ProductView();
-           
         }
 
         //Purches List remove..
-
-
         public ICommand cmdPurchesRemove { get { return new RelayCommand(PurchesRemove); } }
 
         void PurchesRemove(object param)
@@ -291,7 +264,6 @@ namespace Sales_Management_System.ViewModel
             PurchesList.Remove(Product);
             Finaltotal = PurchesList.Sum(p => p.Total);
             Payment = new();
-
         }
 
 
@@ -302,13 +274,11 @@ namespace Sales_Management_System.ViewModel
             var purches = (MDMPurches)param;
             if (purches != null)
             {
-
                 if (purches.PurchesQuantity > 1)
                 {
                     purches.PurchesQuantity--;
                     purches.Total = purches.Product.ProductPrice * purches.PurchesQuantity;
                     Finaltotal = PurchesList.Sum(p => p.Total);
-
                 }
                 else
                 {
@@ -316,14 +286,11 @@ namespace Sales_Management_System.ViewModel
                     {
                         PurchesList.Remove(purches);
                         Finaltotal = PurchesList.Sum(p => p.Total);
-
                     }
                 }
-
             }
 
         }
-
 
         public ICommand cmdIncrement { get { return new RelayCommand(Increment); } }
 
@@ -332,13 +299,11 @@ namespace Sales_Management_System.ViewModel
             var purches = (MDMPurches)param;
             if (purches != null)
             {
-                             
-                    purches.PurchesQuantity++;
-                    purches.Total = purches.Product.ProductPrice * purches.PurchesQuantity;
-                    Finaltotal = PurchesList.Sum(p => p.Total);
-               
-            }
+                purches.PurchesQuantity++;
+                purches.Total = purches.Product.ProductPrice * purches.PurchesQuantity;
+                Finaltotal = PurchesList.Sum(p => p.Total);
 
+            }
         }
 
         private MDStock _stock;
@@ -352,14 +317,11 @@ namespace Sales_Management_System.ViewModel
 
         public ICommand cmdBalance { get { return new RelayCommand(balance); } }
 
-
         void balance(object param)
         {
-
             if (paymentValidation())
             {
                 //Balance = new();
-
                 foreach (var Item in PurchesList)
                 {
                     Balance = Payment - Finaltotal;
@@ -374,7 +336,6 @@ namespace Sales_Management_System.ViewModel
                     Command.Dispose();
                     SQLConnection.close_Connection();
 
-
                     SQLConnection.SqlConnection();
                     string query1 = $"insert into tblBill values('" + Purches.BillId + "','" + Item.Product.ProductId + "','" + Item.Product.ProductName + "','" + Item.Product.ProductPrice + "','" + Item.PurchesQuantity + "','" + Item.Total + "','" + Finaltotal + "','" + Payment + "','" + Balance + "','" + Item.Date.ToString("yyyy-MM-dd HH:mm:ss") + "'  )";
                     SqlCommand Command1 = new SqlCommand(query1, SQLConnection.getConnection());
@@ -386,10 +347,7 @@ namespace Sales_Management_System.ViewModel
                     SQLConnection.close_Connection();
 
 
-
-
                     // int ProductQuantity = int.Parse(SQLConnection.GetValue("tblStock", "ProductQuantity", "ProductId", Item.Product.ProductId.ToString()));
-
                     int ProductQuantity = int.Parse(SQLConnection.GetValue("tblStock", "ProductQuantity", "ProductId", Item.Product.ProductId.ToString())) - Item.PurchesQuantity;
 
                     SQLConnection.SqlConnection();
@@ -404,7 +362,7 @@ namespace Sales_Management_System.ViewModel
 
                 }
                 //MessageBox.Show("Purchesed successfully....\nDo you want bill..?", " ", MessageBoxButton.OK, MessageBoxImage.Information);
-                if (MessageBox.Show("Purchesed successfully\nDo you want bill ? ", " ", MessageBoxButton.YesNo,MessageBoxImage.Question) == MessageBoxResult.Yes)
+                if (MessageBox.Show("Purchesed successfully\nDo you want bill ? ", " ", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     //  PurchesList = new();
                     VWBill bill = new VWBill();
@@ -412,19 +370,16 @@ namespace Sales_Management_System.ViewModel
                     bill.ShowDialog();
                 }
                 PurchesList = new();
-
                 Payment = new();
                 Balance = new();
                 Finaltotal = new();
                 PurchesList = new ObservableCollection<MDMPurches>();
 
             }
-
             // PurchesList = new ObservableCollection<MDMPurches>();
             //  Balance = new();
             //Finaltotal = new();
             //PurchesList = new ObservableCollection<MDMPurches>();
-
         }
 
 
@@ -432,7 +387,6 @@ namespace Sales_Management_System.ViewModel
 
         void VoidPurches(object param)
         {
-
             foreach (var Item in PurchesList)
             {
                 SQLConnection.SqlConnection();
@@ -449,7 +403,6 @@ namespace Sales_Management_System.ViewModel
             Payment = new();
             Balance = new();
         }
-
 
         private double _payment;
 
@@ -468,7 +421,6 @@ namespace Sales_Management_System.ViewModel
         }
 
         private double _balance;
-
         public double Balance
         {
             get { return _balance; }
@@ -477,7 +429,6 @@ namespace Sales_Management_System.ViewModel
 
 
         private ObservableCollection<MDStock> _stocklist;
-
         public ObservableCollection<MDStock> StockList
         {
             get { return _stocklist; }
@@ -486,7 +437,6 @@ namespace Sales_Management_System.ViewModel
 
 
         private ObservableCollection<MDMPurches> _purcheslist;
-
         public ObservableCollection<MDMPurches> PurchesList
         {
             get { return _purcheslist; }
@@ -495,7 +445,6 @@ namespace Sales_Management_System.ViewModel
 
 
         private ObservableCollection<MDProduct> _productlist;
-
         public ObservableCollection<MDProduct> ProductList
         {
             get { return _productlist; }
@@ -503,7 +452,6 @@ namespace Sales_Management_System.ViewModel
         }
 
         private MDMPurches _purches = new MDMPurches();
-
         public MDMPurches Purches
         {
             get { return _purches; }
@@ -521,13 +469,10 @@ namespace Sales_Management_System.ViewModel
 
 
         // Validations....
-
         public bool paymentValidation()
         {
             bool Result = false;
-
             bool payment = PayValidation(Payment, Finaltotal);
-
             if (payment)
             {
                 Result = true;
@@ -537,7 +482,7 @@ namespace Sales_Management_System.ViewModel
 
         public static bool PayValidation(double payment, double total)
         {
-            if(total ==0)
+            if (total == 0)
             {
                 MessageBox.Show("No sales for this payment", "Payment ", MessageBoxButton.OK, MessageBoxImage.Error);
             }

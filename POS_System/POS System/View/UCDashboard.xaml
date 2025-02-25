@@ -3,12 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:fa5="http://schemas.fontawesome.com/icons/"
-        
+             xmlns:fa5="http://schemas.fontawesome.com/icons/"       
              xmlns:local="clr-namespace:Sales_Management_System.View"
-             mc:Ignorable="d" Height="1000" Width="1200" WindowState="Maximized" WindowStartupLocation="CenterOwner" WindowStyle="None" >
-    <Grid Background="WhiteSmoke">
+             mc:Ignorable="d" Height="1000" Width="1090" WindowState="Maximized" WindowStartupLocation="CenterOwner" WindowStyle="None" >
 
+    <Grid Background="WhiteSmoke">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="*"/>

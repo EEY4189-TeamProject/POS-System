@@ -103,7 +103,6 @@ namespace Sales_Management_System.ViewModel
             //main.ShowDialog();
 
             if (MessageBox.Show("Do you want to Logout ?", "Logout", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-
             {
                 VWLogin log = new VWLogin();
                 log.DataContext = new VMLogin();
@@ -122,16 +121,13 @@ namespace Sales_Management_System.ViewModel
 
         void Purches(object param)
         {
-            
-
             VMPurches purches = new VMPurches();
             Control.Content = new UCPurches();
             Control.DataContext = purches;
         }
 
         void sales()
-        {
-            
+        {          
             VMPurches purches = new VMPurches();
             Control.Content = new UCPurches();
             Control.DataContext = purches;

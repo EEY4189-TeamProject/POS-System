@@ -28,13 +28,12 @@ namespace SalesSystem_05._11._2022.ViewModel
         {
             //try
             //{
-
                 if (string.IsNullOrWhiteSpace(SelectedUser.UserName))
                 {
                     MessageBox.Show("Enter valid Username ", "Login", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else if (string.IsNullOrWhiteSpace(Password))
-                {
+            {
                     MessageBox.Show("Enter valid Password ", "Login", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else if (!(SelectedUser.Password == Password))
@@ -63,7 +62,6 @@ namespace SalesSystem_05._11._2022.ViewModel
 
             //bool active =  Status == "IsActive" ? true : false;
 
-
             var searchQuery = $"select * from tblUser where IsActive = 'Active'";
 
             //var searchQuery = $"select * from tblUser ";
@@ -84,7 +82,6 @@ namespace SalesSystem_05._11._2022.ViewModel
             }
             SQLConnection.close_Connection();
         }
-
 
 
         //Auto Refresh...

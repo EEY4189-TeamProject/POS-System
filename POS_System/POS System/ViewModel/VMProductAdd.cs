@@ -21,7 +21,6 @@ namespace Sales_Management_System.ViewModel
         void ProductExit(object param)
         {
             if (MessageBox.Show("Do you want to Cancel ?", "Cancel", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-
             {
                 productExit.Invoke();
 
@@ -36,12 +35,10 @@ namespace Sales_Management_System.ViewModel
         {
             try
             {
-
                 switch (btnAdd)
                 {
                     case "Add":
                         if (Validation())
-
                         {
                             if (!VMValidation.Combovalidation(SelectedSupplier.SupplierName))
                             {
@@ -62,7 +59,6 @@ namespace Sales_Management_System.ViewModel
 
                             SQLConnection.close_Connection();
 
-
                             SQLConnection.SqlConnection();
 
                             string query1 = $"insert into tblStock values('" + Product.ProductId + "' ,'" + Product.ProductName + "','" + Product.ProductPrice + "' ,'" + Product.ProductQuantity + "' )";
@@ -77,7 +73,6 @@ namespace Sales_Management_System.ViewModel
                             productExit.Invoke();
                             MessageBox.Show("Product sucessfully added", "Product", MessageBoxButton.OK, MessageBoxImage.Information);
                             productExit.Invoke();
-
                         }
 
                         break;
@@ -102,8 +97,6 @@ namespace Sales_Management_System.ViewModel
                             command.Dispose();
                             SQLConnection.close_Connection();
 
-
-
                             SQLConnection.SqlConnection();
                             string Query1 = $"Update  tblStock set ProductName ='" + Product.ProductName + "' ,ProductPrice ='" + Product.ProductPrice + "',ProductQuantity='" + Product.ProductQuantity + "' where ProductId = '" + Product.ProductId + "'";
                             SqlCommand command1 = new SqlCommand(Query1, SQLConnection.getConnection());
@@ -118,20 +111,15 @@ namespace Sales_Management_System.ViewModel
                             productExit.Invoke();
                             MessageBox.Show("Product sucessfully Updated", "Product", MessageBoxButton.OK, MessageBoxImage.Information);
                             productExit.Invoke();
-
                         }
                         break;
                 }
-
             }
             catch
             {
                 MessageBox.Show("Invalid Inputs", "Product", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
-
-        //public bool Validation()
 
         public bool Validation()
         {
@@ -140,13 +128,11 @@ namespace Sales_Management_System.ViewModel
             bool product = VMValidation.ProductValidation(Product.ProductName, Product.ProductPrice, Product.ProductQuantity);
             //string name = SelectedSupplier.SupplierName;
 
-
             if (product)
             {
                 Result = true;
             }
             return Result;
-
         }
 
         static bool validate(string name)
@@ -158,24 +144,20 @@ namespace Sales_Management_System.ViewModel
             return true;
         }
 
-
         public bool UpdateValidation()
         {
             bool Result = false;
 
             bool product = VMValidation.ProductUpdateValidation(Product.ProductName, Product.ProductPrice, Product.ProductQuantity);
-
             if (product)
             {
                 Result = true;
             }
             return Result;
-
         }
 
 
         private MDProduct _product;
-
         public MDProduct Product
         {
             get { return _product; }
@@ -183,7 +165,6 @@ namespace Sales_Management_System.ViewModel
         }
 
         private MDStock _stock;
-
         public MDStock Stock
         {
             get { return _stock; }
@@ -191,11 +172,9 @@ namespace Sales_Management_System.ViewModel
         }
 
 
-
         // Product add.... and Update.....
 
         private string _btnAdd;
-
         public string btnAdd
         {
             get { return _btnAdd; }
@@ -203,13 +182,11 @@ namespace Sales_Management_System.ViewModel
         }
 
         private string _btnCancel;
-
         public string btnCancel
         {
             get { return _btnCancel; }
             set { _btnCancel = value; OnPropertyChanged(); }
         }
-
 
         public void IsProduct()
         {
@@ -228,7 +205,7 @@ namespace Sales_Management_System.ViewModel
                 btnCancel = "Cancel";
             }
             else
-            {//listla temparary aa save pannini
+            {
                 QtyEnable = "Hidden";
                 Product = new();
                 //Product = product;
@@ -245,7 +222,6 @@ namespace Sales_Management_System.ViewModel
 
 
         private string _qtyEnable;
-
         public string QtyEnable
         {
             get { return _qtyEnable; ; }
@@ -253,13 +229,9 @@ namespace Sales_Management_System.ViewModel
         }
 
 
-
-
-
         // SupplierAdd....
 
         private MDSupplier selectedSupplier = new MDSupplier();
-
         public MDSupplier SelectedSupplier
         {
             get { return selectedSupplier; }
@@ -267,14 +239,11 @@ namespace Sales_Management_System.ViewModel
         }
 
         private ObservableCollection<MDSupplier> supplierCollection;
-
         public ObservableCollection<MDSupplier> SupplierCollection
         {
             get { return supplierCollection; }
             set { supplierCollection = value; }
         }
-
-
 
 
         public void FnGetData()
@@ -299,7 +268,5 @@ namespace Sales_Management_System.ViewModel
             }
             SQLConnection.close_Connection();
         }
-
-
     }
 }

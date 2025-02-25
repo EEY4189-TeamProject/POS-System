@@ -112,7 +112,6 @@ namespace Sales_Management_System.ViewModel
 
         //reset query....
 
-
         void AutoProductSearch()
         {
             try
@@ -208,11 +207,9 @@ namespace Sales_Management_System.ViewModel
                     MessageBox.Show("Data not found", " Search", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-
             }
             catch (Exception ex)
-            {
-               
+            {             
                 MessageBox.Show(ex.Message+"Please select an option for search...", "Search", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -239,7 +236,6 @@ namespace Sales_Management_System.ViewModel
 
             try
             {
-
                 if (MessageBox.Show("Do you want to delete...", "Delete", MessageBoxButton.YesNo,MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     SQLConnection.SqlConnection();
@@ -262,12 +258,7 @@ namespace Sales_Management_System.ViewModel
                     adapter.Dispose();
                     Command.Dispose();
                     SQLConnection.close_Connection();
-                    ProductRefresh();
-
-
-
-                  
-
+                    ProductRefresh();                 
 
                     MessageBox.Show("Product deleted sucessfully ", "Delete", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
@@ -291,11 +282,9 @@ namespace Sales_Management_System.ViewModel
         }
 
 
-
         //Auto Refresh....
 
         public static Action ProductRefresh;
-
 
         public void On_ProductReferesh()
         {

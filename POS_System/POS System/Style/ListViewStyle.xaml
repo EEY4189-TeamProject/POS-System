@@ -50,7 +50,7 @@
     <Style TargetType="TextBlock" x:Key="product">
 
         <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="35"/>
+        <Setter Property="FontSize" Value="30"/>
         <Setter Property="FontFamily" Value="times new roman"/>
         <Setter Property="Margin" Value="30,20,00,700"/>
 
