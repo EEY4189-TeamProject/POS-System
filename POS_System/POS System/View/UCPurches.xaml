@@ -174,7 +174,7 @@
 
 
                                     <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="{Binding Total,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,StringFormat='C' }" Width="130" />
+                                        <TextBlock Text="{Binding Total,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged }" Width="130" />
                                         <!--<TextBlock Text=".00" />-->
                                     </StackPanel>
                                     <Button Height="20" Width="20" fa5:Awesome.Content="Solid_WindowClose" Foreground="red" FontSize="15" Margin="10,-7,00,00" Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdPurchesRemove}" CommandParameter="{Binding}"/>

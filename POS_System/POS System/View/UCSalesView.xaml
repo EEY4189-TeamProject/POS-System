@@ -70,9 +70,9 @@
                                 <!--<TextBlock Text="{Binding StockId}" TextWrapping="NoWrap"  Width="200" />-->
                                 <TextBlock Text="{Binding PurchesId}" TextWrapping="NoWrap"  Width="205" />
                                 <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="250" />
-                                <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="160" />
+                                <TextBlock Text="{Binding ProductPrice}" Width="160" />
                                 <TextBlock Text="{Binding PurchesQuantity}" Width="110" />
-                                <TextBlock Text="{Binding Total,StringFormat='C'}" Width="145" />
+                                <TextBlock Text="{Binding Total}" Width="145" />
                                 <TextBlock Text="{Binding Date,StringFormat={}{0:MM/dd/yyyy }}" Width="200" />
                                 <!--<Button fa5:Awesome.Content="Solid_Trash" Foreground="red" Margin="100,00,00,00" FontSize="25"  Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdSaleDelete}" CommandParameter="{Binding}"/>-->
                             </StackPanel>

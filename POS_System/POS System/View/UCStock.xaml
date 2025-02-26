@@ -61,7 +61,7 @@
                                 <!--<TextBlock Text="{Binding StockId}" TextWrapping="NoWrap"  Width="200" />-->
                                 <TextBlock Text="{Binding ProductId}" TextWrapping="NoWrap"  Width="200" />
                                 <TextBlock Text="{Binding ProductName}" TextWrapping="NoWrap" Width="225" />
-                                <TextBlock Text="{Binding ProductPrice,StringFormat='C'}" Width="230" />
+                                <TextBlock Text="{Binding ProductPrice}" Width="230" />
                                 <TextBlock Text="{Binding ProductQuantity}" Width="250" />
                                 <Button fa5:Awesome.Content="Solid_Edit"  Foreground="blue" Margin="40,00,00,00" BorderBrush="Transparent" FontSize="25" Background="Transparent"   Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdSUpdate}" CommandParameter="{Binding}" />
                                 <!--<Button fa5:Awesome.Content="Solid_Trash" Foreground="red" Margin="100,00,00,00" FontSize="25"  Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView }}, Path=DataContext.cmdStockDelete}" CommandParameter="{Binding}"/>-->

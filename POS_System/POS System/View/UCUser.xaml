@@ -14,7 +14,7 @@
                 <StackPanel Orientation="Horizontal">
 
                     <Label fa5:Awesome.Content="Solid_User"  FontSize="150" VerticalAlignment="Center" Foreground="#23664d" Margin="20,00,00,00"/>
-                    <TextBlock Text="User Details" FontSize="35" FontFamily="times new roman" VerticalAlignment="Center" Foreground="#23664d" Margin="20,100,-250,00"/>
+                    <TextBlock Text="Admin Details" FontSize="35" FontFamily="times new roman" VerticalAlignment="Center" Foreground="#23664d" Margin="20,100,-250,00"/>
 
 
                     <StackPanel Orientation="Vertical" >
@@ -68,8 +68,8 @@
                 <Border CornerRadius="10 10 00 00" Background="#23664d" Margin="10,10,10,10">
 
                     <StackPanel Orientation="Horizontal"  >
-                        <TextBlock Text="User ID" Width="150" Style="{DynamicResource product}"/>
-                        <TextBlock Text="User Name" Width="180" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Admin ID" Width="150" Style="{DynamicResource product}"/>
+                        <TextBlock Text="Admin Name" Width="180" Style="{DynamicResource product}"/>
                         <TextBlock Text="Password" Width="150" Style="{DynamicResource product}"/>
                         <TextBlock Text="Status" Width="120" Style="{DynamicResource product}"/>
                         <TextBlock Text="Edit" Width="100" Style="{DynamicResource product}"/>

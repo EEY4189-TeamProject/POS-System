@@ -35,10 +35,10 @@
 
 
 
-                    <Label fa5:Awesome.Content="Solid_Music" Foreground="White" FontSize="70" Margin="70,10,00,00"/>
+                    <Label fa5:Awesome.Content="Solid_ShoppingBag" Foreground="White" FontSize="70" Margin="90,10,00,00"/>
 
-                    <TextBlock Text="FRESH HARVEST" FontSize="25" FontFamily="Centaur" Foreground="white"  Margin="00,00,00,00" TextAlignment="Center"/>
-                    <TextBlock Text="MARKET" FontSize="25" FontFamily="Centaur" Foreground="white"  Margin="00,00,00,50" TextAlignment="Center"/>
+                    <TextBlock Text="MKP" FontSize="25" FontFamily="Centaur" Foreground="white"  Margin="00,00,00,00" TextAlignment="Center"/>
+                    <TextBlock Text="SUPER MARKET" FontSize="25" FontFamily="Centaur" Foreground="white"  Margin="00,00,00,50" TextAlignment="Center"/>
                     <!--<TextBlock Text="  MARKET" FontSize="30" FontFamily="chiller" Foreground="White" Margin="30,-70,00,00"/>-->
 
 
@@ -88,21 +88,14 @@
 
                     <Expander Header="   Reports"  Height="150" Width="230" Background="Transparent" BorderBrush="Transparent" Margin="30,00,00,00" Foreground="White" FontSize="25" FontFamily="times new roman">
                         <StackPanel Orientation="Vertical">
-                            <Button Height="35" Width="240" Style="{StaticResource dashboard}" Command="{Binding cmdSalesReport}" >
+                            <Button Height="50" Width="240" Style="{StaticResource dashboard}" Command="{Binding cmdSales}">
                                 <StackPanel Orientation="Horizontal" Margin="00,00,00,00" >
-                                    <Label fa5:Awesome.Content="Solid_FileAlt" Foreground="White" FontSize="15"  Margin="40,5,00,00"/>
-                                    <Label Content="Sales" Height="40" Width="140" Background="Transparent" BorderBrush="Transparent" Foreground="White" FontFamily="times new roman" FontSize="20" Margin="20,00,00,00"/>
+                                    <Label fa5:Awesome.Content="Solid_CaretSquareRight" Foreground="White" FontSize="30"  Margin="50,00,00,00"/>
+                                    <Label Content="Sales" Height="50" Width="140" Background="Transparent" BorderBrush="Transparent" Foreground="White" FontFamily="times new roman" FontSize="25" Margin="20,00,00,00"/>
                                 </StackPanel>
-
                             </Button>
 
-                            <Button Height="35" Width="240" Style="{StaticResource dashboard}" Command="{Binding cmdVoidReport}"  >
-                                <StackPanel Orientation="Horizontal" Margin="00,00,00,00" >
-                                    <Label fa5:Awesome.Content="Solid_FileAlt" Foreground="White" FontSize="15"  Margin="40,5,00,00"/>
-                                    <Label Content="Void" Height="40" Width="140" Background="Transparent" BorderBrush="Transparent" Foreground="White" FontFamily="times new roman" FontSize="20" Margin="20,00,00,00"/>
-                                </StackPanel>
 
-                            </Button>
                         </StackPanel>
                     </Expander>
 
