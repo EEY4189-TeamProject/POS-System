@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\login.png" />
     <None Remove="Images\purches.png" />
     <None Remove="Reports\SupplierReport.rdlc" />
   </ItemGroup>
@@ -21,6 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\login.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\purches.png" />
     <Resource Include="Reports\SupplierReport.rdlc" />
   </ItemGroup>
