@@ -4,44 +4,67 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:fa5="http://schemas.fontawesome.com/icons/"
-        xmlns:local="clr-namespace:SalesSystem_05._11._2022.View"
         mc:Ignorable="d"
-        Title="VWLogin" Height="380" Width="430" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True">
+        Title="VWLogin" WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="#2c2c2c">
 
-    <Grid  >
-        <Grid.Effect>
-            <DropShadowEffect BlurRadius="20" Color="#227EB8"  >
-            </DropShadowEffect>
-        </Grid.Effect>
-        <Border CornerRadius="20" Height="360" Width="400" Background="#227EB8"  BorderThickness="2" BorderBrush="Transparent">
-        <Border CornerRadius="20" Height="340" Width="380" Background="White"  BorderThickness="2" BorderBrush="Transparent">
-        
-            <StackPanel Orientation="Vertical" >
-                <Button Command="{Binding Logout}" Background="Transparent" fa5:Awesome.Content="Solid_WindowClose" BorderBrush="Transparent" Foreground="red" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5"/>
-            <!--<Button Background="Transparent" BorderBrush="Transparent" Foreground="Red"  FontSize="20" fa5:Awesome.Content="Solid_Times"  Command="{Binding Logout}" />-->
-                <Label fa5:Awesome.Content="Solid_User" FontSize="100" HorizontalAlignment="Center" Foreground="#227EB8" Margin="00 -20 00 20"/>
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Login" HorizontalAlignment="Center"  FontFamily="times new roman" FontSize="30" Foreground="#2c698d" Margin="00 -10 00 00"/>
-
-            <StackPanel Orientation="Horizontal" >
-                <TextBlock Text="Username" Margin="30,20,00,00" FontSize="20" FontFamily="times new roman"/>
-                    <ComboBox ItemsSource="{Binding UserCollection}"  Width="200" Margin="50,20,00,00" Height="30" FontSize="20" SelectedValue="{Binding SelectedUser}" DisplayMemberPath="UserName"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Password" Margin="30,10,00,00" FontSize="20" FontFamily="times new roman"/>
-                    <!--<PasswordBox x:Name="pass" PasswordChar="{Binding PasswordObj,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="55,20,00,00" Height="30" FontSize="20"/>-->
-                    <TextBox Text="{Binding Password, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"  Width="200" Margin="55,10,00,00" Height="30" FontSize="20"/>
-                    <!--<PasswordBox ff:PasswordHelper.Attach="True" 
-             ff:PasswordHelper.Password="{Binding Path=Password}" Width="130"/>-->
+        <Border Grid.Column="0" Background="#004D23" CornerRadius="10">
+            <Grid>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="/Images/login.png" Width="200" Height="200" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Welcome to the" Foreground="White" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="MKP Super Market" Foreground="White" FontSize="60" FontWeight="Bold" HorizontalAlignment="Center"/>
                 </StackPanel>
-                <Button  Style="{StaticResource button}"  Template="{DynamicResource ButtonTemplate2}" Command="{Binding cmdMainmenu}" CommandParameter="{Binding ElementName=pass}" Width="200" Margin="145,20,00,00" Content="Login"  />
-               
-            <StackPanel Orientation="Horizontal">
-            <!--<TextBlock Margin="160,10,00,00" Text="Not a member ?" FontFamily="times new roman" FontSize="15"/>
-                    <Button Command="{Binding cmdRegister}" FontFamily="times new roman" FontSize="15" Content="Sign up" Margin="10,10,00,00" Background="Transparent" BorderBrush="Transparent" Foreground="Green"/>-->
+                <TextBlock Text="Developed by MKP" Foreground="LightGray" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30"/>
+            </Grid>
+        </Border>
+
+
+
+        <!-- Right Section -->
+
+        <Border Grid.Column="1" Background="White" CornerRadius="15" 
+            Width="450" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+
+                <!-- Close Button -->
+                <!--
+                <Button Command="{Binding Logout}" Background="Transparent" fa5:Awesome.Content="Solid_WindowClose"
+                BorderBrush="Transparent" Foreground="Red" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="0 0 10 0"/>-->
+
+                <!-- User Icon -->
+                <Label fa5:Awesome.Content="Solid_User" FontSize="90" Foreground="#23664d" HorizontalAlignment="Center" Margin="0 15 0 15"/>
+
+                <!-- Login Title -->
+                <TextBlock Text="Login to your account" HorizontalAlignment="Center" FontSize="24" Foreground="#23664d" FontWeight="Bold" Margin="0 15 0 25"/>
+
+                <!-- Username Input -->
+                <StackPanel>
+                    <TextBlock Text="Username" FontSize="20" FontFamily="pack://application:,,,/Fonts/#Poppins" Foreground="Black" Margin="0 0 0 8"/>
+                    <ComboBox ItemsSource="{Binding UserCollection}" SelectedValue="{Binding SelectedUser}" DisplayMemberPath="UserName"
+                      Width="320" Height="40" FontSize="20" HorizontalAlignment="Center" Margin="0 5 0 20"/>
+                </StackPanel>
+
+                <!-- Password Input -->
+                <StackPanel>
+                    <TextBlock Text="Password" FontSize="20" FontFamily="pack://application:,,,/Fonts/#Poppins" Foreground="Black" Margin="0 0 0 8"/>
+                    <TextBox Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Width="320" Height="40" FontSize="20"/>
+
+                </StackPanel>
+
+                <!-- Login Button -->
+                <Button Style="{StaticResource button}" Template="{DynamicResource ButtonTemplate2}"
+                Command="{Binding cmdMainmenu}" Width="320" Height="45" FontSize="20"
+                Margin="0 25 0 0" Content="Login" FontWeight="Bold" HorizontalAlignment="Center" FontFamily="pack://application:,,,/Fonts/#Poppins"/>
             </StackPanel>
-        </StackPanel>
         </Border>
-        </Border>
+
     </Grid>
 </Window>
+

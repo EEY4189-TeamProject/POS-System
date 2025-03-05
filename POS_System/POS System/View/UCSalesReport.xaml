@@ -8,7 +8,7 @@
              xmlns:local="clr-namespace:POS_System.View"
              mc:Ignorable="d"  d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
              d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
-    <Grid Background="#2c698d">
+    <Grid Background="#23664d">
         <Grid Background="White" Height="230" VerticalAlignment="Top" Margin="10">
 
             <TabControl >

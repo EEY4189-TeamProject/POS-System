@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SalesSystem_05._11._2022.View
+namespace Sales_Management_System.View
 {
     /// <summary>
     /// Interaction logic for UCUser.xaml

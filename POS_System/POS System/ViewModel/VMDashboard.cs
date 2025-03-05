@@ -168,9 +168,9 @@ namespace Sales_Management_System.ViewModel
 
         void CPurView(object param)
         {
-            VMPurchesCancelled can = new VMPurchesCancelled();
-            Control.Content = new UCPurchesCancelled();
-            Control.DataContext = can;
+            //VMPurchesCancelled can = new VMPurchesCancelled();
+            //Control.Content = new UCPurchesCancelled();
+            //Control.DataContext = can;
         }
 
         void SalesReport(object param)
