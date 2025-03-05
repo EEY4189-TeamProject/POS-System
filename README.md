@@ -16,6 +16,9 @@ This project focuses on developing a Point of Sale (POS) system for single-store
 ## Languages
 - **C#**: Used for developing the core functionalities of the POS system.
 - **SQL Server**: Utilized for database management and operations.
+## Figma Link 
+
+https://www.figma.com/design/fg3Xxg0Qm1Mu1Rp3s3UdS0/Untitled?node-id=0-1&t=sShsmNM16sG8mgV1-1 
 
 ## Environment Setup
 To set up the development environment for the Grocery Shop System, follow these steps:
