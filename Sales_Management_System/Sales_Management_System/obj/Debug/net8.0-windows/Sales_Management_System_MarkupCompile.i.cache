@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\App.xaml
-111313647923
+13751873274
 
-23-448915274
+292022312608
 2011966221333
-Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCSupplier.xaml;View\UCUser.xaml;View\VWLogin.xaml;View\VWSupplierAdd.xaml;View\VWUserAdd.xaml;
+Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCProduct.xaml;View\UCSupplier.xaml;View\UCUser.xaml;View\VWLogin.xaml;View\VWProductAdd.xaml;View\VWSupplierAdd.xaml;View\VWUserAdd.xaml;
 
-True
+False
 

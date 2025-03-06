@@ -88,3 +88,7 @@ C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Ma
 C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\Sales_Management_System.pdb
 C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\Sales_Management_System.genruntimeconfig.cache
 C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\ref\Sales_Management_System.dll
+C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\View\UCProduct.g.cs
+C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\View\VWProductAdd.g.cs
+C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\View\UCProduct.baml
+C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\View\VWProductAdd.baml

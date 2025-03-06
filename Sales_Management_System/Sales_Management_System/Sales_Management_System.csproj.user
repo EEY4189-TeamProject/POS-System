@@ -39,6 +39,9 @@
     <Page Update="View\UCDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\UCProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\UCSupplier.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VWProductAdd.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWSupplierAdd.xaml">
