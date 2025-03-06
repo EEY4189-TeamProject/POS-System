@@ -6,4 +6,41 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\UCDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\VWUserAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Style\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ListViewStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\User.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\UserActive.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UCDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UCUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VWLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VWUserAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 </Project>
