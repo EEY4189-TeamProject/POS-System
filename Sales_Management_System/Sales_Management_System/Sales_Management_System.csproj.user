@@ -10,6 +10,12 @@
     <Compile Update="View\UCDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\UCSupplier.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\VWSupplierAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\VWUserAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,10 +39,16 @@
     <Page Update="View\UCDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\UCSupplier.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\UCUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VWSupplierAdd.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWUserAdd.xaml">

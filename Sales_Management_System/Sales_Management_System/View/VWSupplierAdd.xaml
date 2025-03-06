@@ -1,0 +1,52 @@
+﻿<Window x:Class="Sales_Management_System.View.VWSupplierAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sales_Management_System.View"
+        mc:Ignorable="d"
+         xmlns:fa5="http://schemas.fontawesome.com/icons/"
+        Title="VWSupplierAdd" Height="400" Width="450">
+    <Grid Background="#23664d" >
+        <Grid Background="WhiteSmoke" Height="390" Width="440">
+
+            <Button Command="{Binding cmdSupplierExit}" fa5:Awesome.Content="Solid_WindowClose" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="03 ,-2,00,00" Height="20" Width="20" BorderBrush="Transparent" Foreground="red" Background="Transparent"/>
+
+            <Border Height="360" Width="430" Background="#23664d" CornerRadius="20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Supplier" FontSize="30" FontFamily="times new roman" Foreground="White"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Supplier ID " Foreground="White" FontFamily="times new roman" FontSize="20" Margin="20,00,00,00"/>
+                        <TextBlock Text="Supplier Name " Foreground="White" FontFamily="times new roman" FontSize="20" Margin="20,20,00,00"/>
+                        <TextBlock Text="Phone Number " Foreground="White" FontFamily="times new roman" FontSize="20" Margin="20,20,00,00"/>
+                        <TextBlock Text="Supplier Address" Foreground="White" FontFamily="times new roman" FontSize="20" Margin="20,20,00,00"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Height="30" Foreground="White" Width="240" FontFamily="times new roman" FontSize="20" Margin="5,00,00,00" Text="{Binding Supplier.SupplierId, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" IsEnabled="False"/>
+                        <TextBox Height="30" Width="240" FontFamily="times new roman" FontSize="20" Margin="5,10,00,00" Text="{Binding Supplier.SupplierName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Height="30" Width="240" FontFamily="times new roman" FontSize="20" Margin="5,10,00,00" Text="{Binding Supplier.PhoneNumber, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Height="30" Width="240" FontFamily="times new roman" FontSize="20" Margin="5,10,00,00" Text="{Binding Supplier.SupplierAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                        <Button Height="30" Width="100" FontFamily="times new roman" FontSize="20" Margin="18,-20,00,00"  Command="{Binding  cmdSupplierAdd }" Content="{Binding btnAdd}" Foreground="#23664d"/>
+                        <Button Height="30" Width="100" FontFamily="times new roman" FontSize="20" Margin="40,-20,00,00" Command="{Binding cmdSupplierExit}" Content="{Binding btnCancel}" Foreground="#23664d"/>
+                    </StackPanel>
+                </Grid>
+
+
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
