@@ -12,7 +12,7 @@ namespace Sales_Management_System.ViewModel
     {
         static SqlConnection Connection;
 
-        static string ConnectionString = @"Data Source=LAPTOP-KG269C08\SQLEXPRESS;Initial Catalog=SalesManagementWPF; TrustServerCertificate=False; Integrated Security = True";
+        static string ConnectionString = @"Data Source=KETHUSHA;Initial Catalog=SalesManagementWPF; TrustServerCertificate=False; Integrated Security = True";
 
 
         public static bool DBConnection()

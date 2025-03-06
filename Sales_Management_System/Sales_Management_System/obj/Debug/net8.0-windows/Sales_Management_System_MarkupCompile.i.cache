@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-S:\SuperMarket_Project\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\
+C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\
 Sales_Management_System
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-S:\SuperMarket_Project\POS-System\Sales_Management_System\Sales_Management_System\App.xaml
-91943610424
+C:\Users\kethu\Desktop\PosForGrocery\POS-System\Sales_Management_System\Sales_Management_System\App.xaml
+111313647923
 
-18223739013
-2012034543954
-Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCUser.xaml;View\VWLogin.xaml;View\VWUserAdd.xaml;
+23-448915274
+2011966221333
+Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCSupplier.xaml;View\UCUser.xaml;View\VWLogin.xaml;View\VWSupplierAdd.xaml;View\VWUserAdd.xaml;
 
-False
+True
 

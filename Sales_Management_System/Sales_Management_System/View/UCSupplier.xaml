@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="Sales_Management_System.View.UCSupplier"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:fa5="http://schemas.fontawesome.com/icons/"
+             xmlns:local="clr-namespace:Sales_Management_System.View"
+             mc:Ignorable="d"  
+              d:DesignHeight="{Binding Height, Source={x:Static SystemParameters.WorkArea}}"
+            d:DesignWidth="{Binding Width, Source={x:Static SystemParameters.WorkArea}}">
+
+    <!-- Root grid with background color -->
+    <Grid Background="#23664d">
+
+        <!-- Border container for supplier details with rounded corners -->
+        <Border CornerRadius="10" Background="White" Height="230" VerticalAlignment="Top" Margin="10">
+            <Border CornerRadius="10" Background="WhiteSmoke" Height="210" VerticalAlignment="Top" Margin="10">
+
+                <!-- Horizontal stack panel for layout -->
+                <StackPanel Orientation="Horizontal">
+
+                    <!-- Icon representing suppliers -->
+                    <Label fa5:Awesome.Content="Solid_Users" Foreground="#23664d" FontSize="150" VerticalAlignment="Center"/>
+
+                    <!-- Supplier details title -->
+                    <TextBlock Text="Supplier Details" FontSize="50" FontFamily="times new roman" VerticalAlignment="Center" Margin="20,100,330,20" Foreground="#23664d"/>
+
+                    <!-- Stack panel for search and buttons -->
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="00,20,30,00">
+
+                            <!-- Search label -->
+                            <TextBlock Height="40" Width="100" FontSize="30" FontFamily="times new roman" Text="Search" Margin="00,20,00,00" Foreground="#23664d"/>
+
+                            <!-- Dropdown for search criteria -->
+                            <ComboBox Foreground="#23664d" Height="40" Width="250" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Text="{Binding Field,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                <ComboBoxItem Content="Supplier ID"/>
+                                <ComboBoxItem Content="Supplier Name"/>
+                                <ComboBoxItem Content="Address"/>
+                            </ComboBox>
+
+                            <!-- Textbox for search input -->
+                            <TextBox Foreground="#23664d" Height="40" Width="300" FontSize="20" FontFamily="times new roman" Margin="50,20,00,00" Background="White" Text="{Binding Find,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                            <!-- Search button -->
+                            <Button Command="{Binding cmdSearch}" Height="40" Width="50" FontSize="20" FontFamily="times new roman" Margin="00,20,00,00" Background="White">
+                                <Label fa5:Awesome.Content="Solid_Search" Foreground="#23664d"/>
+                            </Button>
+                        </StackPanel>
+
+                        <!-- Reset button -->
+                        <Button Command="{Binding cmdSupplierReset}" Background="White" BorderBrush="#23664d" fa5:Awesome.Content="Solid_Undo" Foreground="Blue" Margin="00,10,30,00" Height="40" Width="50" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+                        <!-- Add supplier button -->
+                        <Button fa5:Awesome.Content="Solid_PlusSquare" Foreground="Blue" Height="40" Width="50" FontSize="30" HorizontalAlignment="Right" Margin="00,10,30,0" Background="White" Command="{Binding cmdAddSupplier}"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Border>
+        </Border>
+
+        <!-- Supplier list container -->
+        <Grid Background="White" Margin="10,250,10,10" Height="800">
+
+            <!-- Header row for supplier table -->
+            <Border CornerRadius="10 10 00 00" Background="#23664d" Margin="10,10,10,10">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Supplier ID" Width="200" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Supplier Name" Width="380" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Phone Number" Width="280" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Address" Width="300" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Edit" Width="160" Style="{DynamicResource product}"/>
+                    <TextBlock Text="Delete" Style="{DynamicResource product}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ListView for displaying supplier data -->
+            <ListView Template="{DynamicResource ListViewTemplate1}" Style="{DynamicResource List}" 
+                      x:Name="Stock" Margin="10,50,10,-20" ItemsSource="{Binding Supplier}" Height="710" Background="WhiteSmoke" BorderBrush="#2c698d" BorderThickness="3">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="50" Margin="6">
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
+
+                                <!-- Supplier details in each row -->
+                                <TextBlock Text="{Binding SupplierId}" TextWrapping="NoWrap" Width="250"/>
+                                <TextBlock Text="{Binding SupplierName}" TextWrapping="NoWrap" Width="390"/>
+                                <TextBlock Text="{Binding PhoneNumber}" Width="320"/>
+                                <TextBlock Text="{Binding SupplierAddress}" Width="300"/>
+
+                                <!-- Edit button -->
+                                <Button fa5:Awesome.Content="Solid_Edit" Foreground="blue" Margin="40,00,00,00" BorderBrush="Transparent" FontSize="25" Background="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView}}, Path=DataContext.cmdUpdate}" CommandParameter="{Binding}"/>
+
+                                <!-- Delete button -->
+                                <Button fa5:Awesome.Content="Solid_Trash" Foreground="red" Margin="180,00,00,00" FontSize="25" Background="Transparent" BorderBrush="Transparent" Command="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView}}, Path=DataContext.cmdSupplierDelete}" CommandParameter="{Binding}"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+    </Grid>
+
+</UserControl>
