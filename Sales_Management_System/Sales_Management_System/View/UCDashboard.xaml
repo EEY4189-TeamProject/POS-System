@@ -1,0 +1,12 @@
+﻿<Window x:Class="Sales_Management_System.View.UCDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sales_Management_System.View"
+        mc:Ignorable="d"
+        Title="UCDashboard" Height="450" Width="800">
+    <Grid>
+        
+    </Grid>
+</Window>

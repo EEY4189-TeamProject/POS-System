@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "eLxoM7FqLf4=",
+  "dgSpecHash": "rjubD61z8bi1Km+SGHRlrKHlziVxHco+jDYLvcxnayOYtM2umKp07XJ4wdLcfEqQWEcM1Bfr2Y1do2fNZa0qCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kethu\\Desktop\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "S:\\SuperMarket_Project\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\fontawesome5.wpf\\1.0.5\\fontawesome5.wpf.1.0.5.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FontAwesome5.WPF 1.0.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FontAwesome5.WPF",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }
