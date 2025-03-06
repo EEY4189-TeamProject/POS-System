@@ -47,7 +47,7 @@ namespace Sales_Management_System {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.1.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -73,7 +73,7 @@ namespace Sales_Management_System {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.1.0")]
         public static void Main() {
             Sales_Management_System.App app = new Sales_Management_System.App();
             app.InitializeComponent();

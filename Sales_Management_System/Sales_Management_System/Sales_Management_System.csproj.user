@@ -7,9 +7,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\UCDashboard.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\UCSupplier.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,10 +39,19 @@
     <Page Update="View\UCProduct.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\UCPurches.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UCSalesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\UCSupplier.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UCUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VWBill.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWLogin.xaml">
