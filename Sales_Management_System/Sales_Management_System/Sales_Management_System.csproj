@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <PackageReference Include="FontAwesome5.WPF" Version="1.0.5" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.26" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
