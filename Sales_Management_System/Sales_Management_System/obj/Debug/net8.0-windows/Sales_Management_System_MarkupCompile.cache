@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\SuperMarket_Project\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\
+D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\
 Sales_Management_System
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\SuperMarket_Project\POS-System\Sales_Management_System\Sales_Management_System\App.xaml
+D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\App.xaml
 16-1635938424
 
 36567574208
-2111088835595
+211-1806881891
 Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCProduct.xaml;View\UCPurches.xaml;View\UCSalesView.xaml;View\UCSupplier.xaml;View\UCUser.xaml;View\VWBill.xaml;View\VWLogin.xaml;View\VWProductAdd.xaml;View\VWSupplierAdd.xaml;View\VWUserAdd.xaml;
 
 False
