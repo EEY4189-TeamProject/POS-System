@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\UCStock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UCSupplier.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\VWStockUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\VWSupplierAdd.xaml.cs">
@@ -45,6 +51,9 @@
     <Page Update="View\UCSalesView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\UCStock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\UCSupplier.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -58,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWProductAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VWStockUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\VWSupplierAdd.xaml">

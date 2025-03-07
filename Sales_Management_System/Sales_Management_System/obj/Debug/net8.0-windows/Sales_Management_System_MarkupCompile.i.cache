@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\App.xaml
-16-1635938424
+18-1199472707
 
-381722423102
+421776818084
 211-1806881891
-Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCProduct.xaml;View\UCPurches.xaml;View\UCSalesView.xaml;View\UCSupplier.xaml;View\UCUser.xaml;View\VWBill.xaml;View\VWLogin.xaml;View\VWProductAdd.xaml;View\VWSupplierAdd.xaml;View\VWUserAdd.xaml;
+Style\ButtonStyles.xaml;Style\ListViewStyle.xaml;Style\Login.xaml;Style\User.xaml;Style\UserActive.xaml;View\UCDashboard.xaml;View\UCProduct.xaml;View\UCPurches.xaml;View\UCSalesView.xaml;View\UCStock.xaml;View\UCSupplier.xaml;View\UCUser.xaml;View\VWBill.xaml;View\VWLogin.xaml;View\VWProductAdd.xaml;View\VWStockUpdate.xaml;View\VWSupplierAdd.xaml;View\VWUserAdd.xaml;
 
-True
+False
 

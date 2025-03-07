@@ -346,3 +346,5 @@ D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System
 D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\Sales_Management_System.pdb
 D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\Sales_Management_System.genruntimeconfig.cache
 D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\ref\Sales_Management_System.dll
+D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\View\UCStock.g.cs
+D:\EEY4189-POS-System\POS-System\Sales_Management_System\Sales_Management_System\obj\Debug\net8.0-windows\View\UCStock.baml
