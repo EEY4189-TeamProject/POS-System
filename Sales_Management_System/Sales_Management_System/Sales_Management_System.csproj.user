@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\UCSalesReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UCStock.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UCPurches.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UCSalesReport.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UCSalesView.xaml">
