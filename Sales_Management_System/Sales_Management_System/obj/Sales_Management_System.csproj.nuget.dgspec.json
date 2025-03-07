@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SuperMarket_Project\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj": {}
+    "D:\\EEY4189-POS-System\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj": {}
   },
   "projects": {
-    "C:\\SuperMarket_Project\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj": {
+    "D:\\EEY4189-POS-System\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SuperMarket_Project\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj",
+        "projectUniqueName": "D:\\EEY4189-POS-System\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj",
         "projectName": "Sales_Management_System",
-        "projectPath": "C:\\SuperMarket_Project\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj",
-        "packagesPath": "C:\\Users\\Danu\\.nuget\\packages\\",
-        "outputPath": "C:\\SuperMarket_Project\\POS-System\\Sales_Management_System\\Sales_Management_System\\obj\\",
+        "projectPath": "D:\\EEY4189-POS-System\\POS-System\\Sales_Management_System\\Sales_Management_System\\Sales_Management_System.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\EEY4189-POS-System\\POS-System\\Sales_Management_System\\Sales_Management_System\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Danu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -72,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
