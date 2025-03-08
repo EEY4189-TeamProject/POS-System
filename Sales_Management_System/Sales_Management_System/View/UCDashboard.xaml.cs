@@ -59,7 +59,7 @@ namespace Sales_Management_System.View
 
         public ICommand cmdUCPurches { get { return new RelayCommand(Purches); } }
 
-        //public ICommand cmdUCStock { get { return new RelayCommand(Stock); } }
+        public ICommand cmdUCStock { get { return new RelayCommand(Stock); } }
 
         public ICommand cmdBack { get { return new RelayCommand(Back); } }
 
@@ -72,7 +72,7 @@ namespace Sales_Management_System.View
 
         public ICommand cmdUser { get { return new RelayCommand(User); } }
 
-        //public ICommand cmdSalesReport { get { return new RelayCommand(SalesReport); } }
+        public ICommand cmdSalesReport { get { return new RelayCommand(SalesReport); } }
 
         
         void User(object param)
@@ -139,12 +139,12 @@ namespace Sales_Management_System.View
         }
 
 
-        //void Stock(object param)
-        //{
-        //    VMStock stock = new VMStock();
-        //    Control.Content = new UCStock();
-        //    Control.DataContext = stock;
-        //}
+        void Stock(object param)
+        {
+            VMStock stock = new VMStock();
+            Control.Content = new UCStock();
+            Control.DataContext = stock;
+        }
 
 
         void SalesView(object param)
@@ -158,14 +158,14 @@ namespace Sales_Management_System.View
         {
         }
 
-        //void SalesReport(object param)
-        //{
-        //    VMUCSalesReport SReport = new VMUCSalesReport();
-        //    Control.Content = new UCSalesReport();
-        //    Control.DataContext = SReport;
-        //}
+        void SalesReport(object param)
+        {
+            VMUCSalesReport SReport = new VMUCSalesReport();
+            Control.Content = new UCSalesReport();
+            Control.DataContext = SReport;
+        }
 
-      
+
     }
 }
 

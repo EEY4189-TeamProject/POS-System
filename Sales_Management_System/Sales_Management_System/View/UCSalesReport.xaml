@@ -27,11 +27,11 @@
 
                             <Label Content="Day End" FontFamily="times new roman" FontSize="20" Margin="0 30 0 130"/>
                             <DatePicker Height="30" Width="150" Margin="180 -100 00 00" FontSize="20" x:Name="Find" />
-                            <Button fa5:Awesome.Content="Solid_Search" Height="30" Width="30" FontSize="15"  Margin="00 -100 00 00" Background="#23664d" Foreground="White" Click="Button_Click_Search" />
+                            <Button fa5:Awesome.Content="Solid_Search" Height="30" Width="30" FontSize="15"  Margin="00 -100 00 00" Background="#23664d" Foreground="White" />
 
                         </StackPanel>
 
-                        <Button Height="40" Width="100" Content="Refresh" Background="#23664d" Foreground="White" HorizontalAlignment="Left" Margin="50 -200 00 00" FontFamily="times new roman" Click="Button_Click"/>
+                        <Button Height="40" Width="100" Content="Refresh" Background="#23664d" Foreground="White" HorizontalAlignment="Left" Margin="50 -200 00 00" FontFamily="times new roman" />
 
                     </StackPanel>
 
@@ -55,10 +55,10 @@
                             <DatePicker Margin="10 -230 0 00" Height="30" Width="180" FontSize="20" x:Name="StartDate"/>
                             <Label Content="To" FontFamily="times new roman" FontSize="20" Margin="20 -130 0 00"/>
                             <DatePicker Margin="20 -230 0 00" Height="30" Width="180" FontSize="20" x:Name="EndDate"/>
-                            <Button fa5:Awesome.Content="Solid_Search" Height="30" Width="30" FontSize="15"  Margin="1  -230 00 00" Background="#23664d" Foreground="White" Click="Button_Click_Month_Search" />
+                            <Button fa5:Awesome.Content="Solid_Search" Height="30" Width="30" FontSize="15"  Margin="1  -230 00 00" Background="#23664d" Foreground="White"  />
 
                         </StackPanel>
-                        <Button Height="40" Width="100" Content="Refresh" Background="#23664d" Foreground="White" HorizontalAlignment="Left" Margin="50 -100 00 00" FontFamily="times new roman" Click="Button_Click_Load"/>
+                        <Button Height="40" Width="100" Content="Refresh" Background="#23664d" Foreground="White" HorizontalAlignment="Left" Margin="50 -100 00 00" FontFamily="times new roman" />
 
 
                     </StackPanel>
