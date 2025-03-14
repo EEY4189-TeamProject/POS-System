@@ -4,8 +4,7 @@
 The **Grocery Shop System** is designed to enhance the operational efficiency of Food City by automating inventory management, sales processing, and customer data handling. This system saves time for both customers and staff, ensuring quick and efficient checkouts while improving safety by reducing manual handling and potential errors.
 
 ## Scope
-This project focuses on developing a Point of Sale (POS) system for single-store operations. The scope includes automating key tasks such as inventory management, sales processing, and customer data handling. The system will also provide real-time reporting and analytics to help improve decision-making and streamline processes. Mobile app development, third-party integrations, and multi-store management are outside the scope of this project.
-
+This project focuses on developing a Point of Sale (POS) system for single-store operations. The scope includes automating key tasks such as inventory management, sales processing, and customer data handling. The system will also provide real-time reporting and analytics to help improve decision-making and streamline processes. The system maintains secure cashier accounts for better coordination.
 ## Features
 - **Automated Inventory Management:** Helps in maintaining stock levels, product tracking, and reorders.
 - **Sales Processing Automation:** Facilitates faster checkouts and reduces human errors.
